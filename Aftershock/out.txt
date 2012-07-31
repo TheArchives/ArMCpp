@@ -1,0 +1,124 @@
+19:30:38 - Info  - Imported player database.
+19:30:38 - Info  - in beat
+19:30:38 - Info  - Launching heartbeat
+19:31:01 - Info  - Saved player database.
+19:40:43 - Info  - in beat
+19:40:43 - Info  - Launching heartbeat
+19:41:22 - Info  - Saved player database.
+19:41:47 - Info  - Restarting server on user request
+19:41:47 - Info  - Imported player database.
+19:41:47 - Info  - in beat
+19:41:47 - Info  - Launching heartbeat
+19:41:52 - Info  - Saved player database.
+19:41:54 - Info  - Restarting server on user request
+19:41:54 - Info  - Imported player database.
+19:41:54 - Info  - in beat
+19:41:54 - Info  - Launching heartbeat
+19:41:57 - Info  - Saved player database.
+19:41:59 - Info  - Restarting server on user request
+19:41:59 - Info  - Imported player database.
+19:41:59 - Info  - in beat
+19:41:59 - Info  - Launching heartbeat
+19:42:27 - Info  - Saved player database.
+19:42:33 - Info  - Imported player database.
+19:42:33 - Info  - in beat
+19:42:33 - Info  - Launching heartbeat
+19:42:35 - Info  - Saved player database.
+19:43:33 - Info  - Imported player database.
+19:43:33 - Info  - in beat
+19:43:33 - Info  - Launching heartbeat
+19:44:01 - Info  - Saved player database.
+19:49:38 - Info  - Imported player database.
+19:49:38 - Info  - in beat
+19:49:38 - Info  - Launching heartbeat
+19:49:40 - Info  - Saved player database.
+19:50:15 - Info  - Restarting server on user request
+19:50:15 - Info  - Imported player database.
+19:50:15 - Info  - in beat
+19:50:15 - Info  - Launching heartbeat
+19:50:18 - Info  - Saved player database.
+19:52:48 - Info  - Imported player database.
+19:52:48 - Info  - in beat
+19:52:48 - Info  - Launching heartbeat
+19:52:50 - Info  - Saved player database.
+19:54:11 - Info  - Imported player database.
+19:54:11 - Info  - in beat
+19:54:11 - Info  - Launching heartbeat
+19:54:13 - Info  - Saved player database.
+19:57:26 - Info  - Imported player database.
+19:57:26 - Info  - in beat
+19:57:26 - Info  - Launching heartbeat
+19:57:28 - Info  - Saved player database.
+19:57:50 - Info  - Restarting server on user request
+19:57:50 - Info  - in beat
+19:57:50 - Info  - Launching heartbeat
+19:57:51 - Info  - Saved player database.
+19:59:39 - Info  - Imported player database.
+19:59:39 - Info  - in beat
+19:59:39 - Info  - Launching heartbeat
+19:59:40 - Info  - Saved player database.
+20:01:08 - Info  - Imported player database.
+20:01:08 - Info  - in beat
+20:01:08 - Info  - Launching heartbeat
+20:01:10 - Info  - Saved player database.
+20:01:53 - Info  - Imported player database.
+20:01:53 - Info  - in beat
+20:01:53 - Info  - Launching heartbeat
+20:01:54 - Info  - Saved player database.
+20:02:18 - Info  - Imported player database.
+20:02:18 - Info  - in beat
+20:02:18 - Info  - Launching heartbeat
+20:02:19 - Info  - Saved player database.
+20:08:00 - Info  - Imported player database.
+20:08:00 - Info  - in beat
+20:08:00 - Info  - Launching heartbeat
+20:08:03 - Info  - Saved player database.
+20:34:37 - Info  - Imported player database.
+20:34:37 - Info  - in beat
+20:34:37 - Info  - Launching heartbeat
+20:58:33.705000 - Info  - in beat
+20:58:33.705000 - Info  - Launching heartbeat
+20:58:34.960000 - Info  - Saved player database.
+21:11:01.704000 - Info  - Imported player database.
+21:11:01.719600 - Info  - in beat
+21:11:01.719600 - Info  - Launching heartbeat
+21:11:09.660000 - Info  - Saved player database.
+21:12:03.402000 - Info  - in beat
+21:12:03.402000 - Info  - Launching heartbeat
+21:12:04.150800 - Info  - Saved player database.
+21:12:32.808000 - Info  - in beat
+21:12:32.808000 - Info  - Launching heartbeat
+21:12:33.931200 - Info  - Saved player database.
+21:13:07.580400 - Info  - Imported player database.
+21:13:07.580400 - Info  - in beat
+21:13:07.580400 - Info  - Launching heartbeat
+21:13:08.953200 - Info  - Saved player database.
+21:13:41.260800 - Info  - in beat
+21:13:41.260800 - Info  - Launching heartbeat
+21:13:42.633600 - Info  - Saved player database.
+21:14:11.244000 - Info  - Imported player database.
+21:14:11.244000 - Info  - in beat
+21:14:11.244000 - Info  - Launching heartbeat
+21:14:13.615200 - Info  - Saved player database.
+21:14:14.972400 - Info  - Restarting server on user request
+21:14:14.988000 - Info  - Imported player database.
+21:14:14.988000 - Info  - in beat
+21:14:14.988000 - Info  - Launching heartbeat
+21:14:18.295200 - Info  - Saved player database.
+21:15:59.165200 - Info  - Imported player database.
+21:15:59.180800 - Info  - in beat
+21:15:59.180800 - Info  - Launching heartbeat
+21:16:01.240000 - Info  - Saved player database.
+21:16:05.077600 - Info  - Restarting server on user request
+21:16:05.093200 - Info  - Imported player database.
+21:16:05.093200 - Info  - in beat
+21:16:05.093200 - Info  - Launching heartbeat
+21:16:06.091600 - Info  - Saved player database.
+21:16:34.375400 - Info  - in beat
+21:16:34.375400 - Info  - Launching heartbeat
+21:17:08.381000 - Info  - Saved player database.
+21:17:14.649000 - Info  - Restarting server on user request
+21:17:14.658000 - Info  - Imported player database.
+21:17:14.665000 - Info  - in beat
+21:17:14.666000 - Info  - Launching heartbeat
+21:17:23.476400 - Info  - Saved player database.

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Aftershock" />
+		<Option pch_mode="2" />
+		<Option default_target="Win32Launcher" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="W32Debug">
+				<Option platforms="Windows;" />
+				<Option output="bin\Windows\Debug\Aftershock.dll" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin\Windows\Debug\" />
+				<Option object_output="obj\Windows\Debug\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="-n" />
+				<Option host_application="Aftershock.exe" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-D_WIN32_WINNT=0x0500" />
+					<Add option="-DAFTERSHOCK_DEBUG_BUILD" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-Wl,--enable-auto-import" />
+					<Add library="ws2_32" />
+					<Add library="mswsock" />
+					<Add library="libz.a" />
+					<Add library="libboost_thread_d.a" />
+					<Add library="libboost_system_d.a" />
+					<Add library="libboost_iostreams_d.a" />
+					<Add library="libboost_signals_d.a" />
+					<Add library="libboost_filesystem_d.a" />
+				</Linker>
+			</Target>
+			<Target title="W32Release">
+				<Option platforms="Windows;" />
+				<Option output="bin\Windows\Release\Aftershock.dll" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin\Windows\Release\" />
+				<Option object_output="obj\Windows\Release\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option host_application="Aftershock.exe" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-D_WIN32_WINNT=0x0500" />
+					<Add option="-DAFTERSHOCK_RELEASE_BUILD" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,--enable-auto-import" />
+					<Add library="ws2_32" />
+					<Add library="mswsock" />
+					<Add library="libz.a" />
+					<Add library="libboost_thread.a" />
+					<Add library="libboost_system.a" />
+					<Add library="libboost_iostreams.a" />
+					<Add library="libboost_signals.a" />
+					<Add library="libboost_filesystem.a" />
+				</Linker>
+			</Target>
+			<Target title="Win32Launcher">
+				<Option platforms="Windows;" />
+				<Option output="bin\Windows\Debug\Aftershock" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin\Windows\Debug\" />
+				<Option object_output="objs\Windows\Launcher" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option parameters="-n" />
+				<Option host_application="Aftershock.exe" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-D_WIN32_WINNT=0x0500" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-Wl,--enable-auto-import" />
+					<Add library="ws2_32" />
+					<Add library="mswsock" />
+					<Add library="libNBTLib.a" />
+					<Add library="libz.a" />
+					<Add library="bin\Windows\Debug\Aftershock.dll.a" />
+					<Add library="libboost_program_options_d.a" />
+					<Add library="libboost_thread_d.a" />
+					<Add library="libboost_system_d.a" />
+					<Add library="libboost_iostreams_d.a" />
+					<Add library="libboost_signals_d.a" />
+					<Add library="libboost_filesystem_d.a" />
+				</Linker>
+			</Target>
+			<Target title="WindowsTestPlugin">
+				<Option platforms="Windows;" />
+				<Option output="bin\Windows\Debug\Plugins\TestPlugin" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin\Windows\Debug" />
+				<Option object_output="obj\Windows\TestPlugin\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="-n" />
+				<Option host_application="Aftershock.exe" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-D_WIN32_WINNT=0x0500" />
+				</Compiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add library="mswsock" />
+					<Add library="libNBTLib.a" />
+					<Add library="libz.a" />
+					<Add library="bin\Windows\Debug\libAftershock.dll.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O3" />
+			<Add option="-std=c++0x" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-mthreads" />
+			<Add option="-U__STRICT_ANSI__" />
+			<Add option="-DBOOST_THREAD_USE_LIB" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="Launcher.cpp">
+			<Option target="Win32Launcher" />
+		</Unit>
+		<Unit filename="TestPlugin.cpp">
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\Aftershock.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\Events.hpp" />
+		<Unit filename="include\Logging.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\Packets.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\Plugin.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\Server.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\eventChain.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="include\taskScheduler.hpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Unit filename="src\Aftershock.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\Heartbeat.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\Logging.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\Packets.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\Plugin.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\Server.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="src\taskScheduler.cpp">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+		</Unit>
+		<Unit filename="version.h">
+			<Option target="W32Debug" />
+			<Option target="W32Release" />
+			<Option target="WindowsTestPlugin" />
+		</Unit>
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" update_manifest="1" do_auto_increment="0" ask_to_increment="1" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="1" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+			<code_completion />
+			<envvars />
+			<debugger>
+				<search_path add="." />
+				<search_path add="../../../" />
+			</debugger>
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
