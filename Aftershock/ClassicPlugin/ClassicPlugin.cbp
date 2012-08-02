@@ -14,6 +14,7 @@
 				<Option compiler="gcc" />
 				<Option parameters="-n" />
 				<Option host_application="C:\Users\Adam\Projects\Aftershock\Code\bin\Windows\Debug\Aftershock.exe" />
+				<Option run_host_application_in_terminal="0" />
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
@@ -42,7 +43,7 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-std=c++0x" />
+			<Add option="-std=c++11" />
 			<Add option="-U__STRICT_ANSI__" />
 			<Add option="-D_WIN32_WINNT=0x0500" />
 			<Add option="-DBOOST_THREAD_USE_LIB" />
@@ -54,11 +55,11 @@
 			<Add option="-Wl,-t" />
 			<Add library="ws2_32" />
 			<Add library="libnbtlib.a" />
-			<Add library="libboost_thread_d.a" />
-			<Add library="libboost_system_d.a" />
-			<Add library="libboost_iostreams_d.a" />
-			<Add library="libboost_signals_d.a" />
-			<Add library="libboost_filesystem_d.a" />
+			<Add library="libboost_thread.a" />
+			<Add library="libboost_system.a" />
+			<Add library="libboost_iostreams.a" />
+			<Add library="libboost_signals.a" />
+			<Add library="libboost_filesystem.a" />
 			<Add library="libz" />
 			<Add library="..\bin\Windows\Debug\Aftershock.dll.a" />
 			<Add directory="..\lib" />

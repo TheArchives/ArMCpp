@@ -91,7 +91,7 @@ class Player
     const uint8_t ID;
 
     void registerDataHandler();
-    void onData(char d);
+    void onData(std::shared_ptr<char> d, const boost::system::error_code& ec, std::size_t bt);
 
     void sendMapInit(MapSendData& data);
     void sendMapChunk(MapSendData& data, MapSendData::ChunkIterator next, MapSendData::ChunkIterator end);

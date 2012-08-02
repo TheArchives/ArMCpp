@@ -179,9 +179,8 @@ inline uint64_t& swap<uint64_t>(uint64_t& a)
 struct Packet_Base
 {
     const char id; // ID of packet
-    const size_t len; // Length of payload (excludes the ID)
 
-    Packet_Base(const char& i, const size_t& l): id(i),len(l) {}
+    Packet_Base(const char& i): id(i) {}
 
     virtual void send(boost::asio::ip::tcp::socket& s) const = 0; // Send data instantly
     //virtual void async_send(boost::asio::ip::tcp::socket& s) const = 0; // Send data on next sync
@@ -202,18 +201,18 @@ struct outputData
     }
 };
 
-struct sendData
+struct sendStaticLengthData
 {
     std::list<size_t>::const_iterator it;
     const std::list<size_t>::const_iterator itend;
     boost::asio::ip::tcp::socket& s;
-    sendData(boost::asio::ip::tcp::socket& _s, std::list<size_t>::const_iterator _it, const std::list<size_t>::const_iterator _itend): it(_it),itend(_itend),s(_s) {}
+    sendStaticLengthData(boost::asio::ip::tcp::socket& _s, std::list<size_t>::const_iterator _it, const std::list<size_t>::const_iterator _itend): it(_it),itend(_itend),s(_s) {}
     template<class t>
     void operator()(const t&);
 };
 
 template<class t>
-void sendData::operator()(const t& a)
+void sendStaticLengthData::operator()(const t& a)
 {
     const t b = ByteOrder::copy(a);
     s.send(boost::asio::buffer((char*)&b,sizeof(t)));
@@ -221,20 +220,22 @@ void sendData::operator()(const t& a)
 }
 
 template<>
-void sendData::operator()<std::string>(const std::string&);
+void sendStaticLengthData::operator()<std::string>(const std::string&);
+template<>
+void sendStaticLengthData::operator()<std::wstring>(const std::wstring&);
 
-struct recvData
+struct recvStaticLengthData
 {
     std::list<size_t>::const_iterator it;
     const std::list<size_t>::const_iterator itend;
     boost::asio::ip::tcp::socket& s;
-    recvData(boost::asio::ip::tcp::socket& _s, std::list<size_t>::const_iterator _it, const std::list<size_t>::const_iterator _itend): it(_it),itend(_itend),s(_s) {}
+    recvStaticLengthData(boost::asio::ip::tcp::socket& _s, std::list<size_t>::const_iterator _it, const std::list<size_t>::const_iterator _itend): it(_it),itend(_itend),s(_s) {}
     template<class t>
     void operator()(t&);
 };
 
 template<class t>
-void recvData::operator()(t& a)
+void recvStaticLengthData::operator()(t& a)
 {
     s.receive(boost::asio::buffer((char*)&a,sizeof(a)));
     ByteOrder::swap(a);
@@ -242,62 +243,149 @@ void recvData::operator()(t& a)
 }
 
 template<>
-void recvData::operator()<std::string>(std::string&);
+void recvStaticLengthData::operator()<std::string>(std::string&);
+template<>
+void recvStaticLengthData::operator()<std::wstring>(std::wstring&);
 
+
+struct sendDynamicLengthData
+{
+    boost::asio::ip::tcp::socket& s;
+    sendDynamicLengthData(boost::asio::ip::tcp::socket& _s): s(_s) {}
+    template<class t>
+    void operator()(const t&);
+};
+
+template<class t>
+void sendDynamicLengthData::operator()(const t& a)
+{
+    const t b = ByteOrder::copy(a);
+    s.send(boost::asio::buffer((char*)&b,sizeof(t)));
+    std::cout << "Sent: " << (int)a << std::endl;
 }
+
+template<>
+void sendDynamicLengthData::operator()<std::string>(const std::string&);
+template<>
+void sendDynamicLengthData::operator()<std::wstring>(const std::wstring&);
+
+struct recvDynamicLengthData
+{
+    boost::asio::ip::tcp::socket& s;
+    recvDynamicLengthData(boost::asio::ip::tcp::socket& _s): s(_s) {}
+    template<class t>
+    void operator()(t&);
+};
+
+template<class t>
+void recvDynamicLengthData::operator()(t& a)
+{
+    s.receive(boost::asio::buffer((char*)&a,sizeof(a)));
+    ByteOrder::swap(a);
+    //std::cout << "Recieved: " << (int)a << std::endl;
+}
+
+template<>
+void recvDynamicLengthData::operator()<std::string>(std::string&);
+template<>
+void recvDynamicLengthData::operator()<std::wstring>(std::wstring&);
+}
+
+template<class...t>
+struct PacketData {
+    std::tuple<t...> data;
+    template<size_t t2>
+    auto at() -> decltype( std::get<t2>(data) )
+    {
+        return std::get<t2>(data);
+    }
+    template<class...t2>
+    void set(t2&&...a)
+    {
+        data = std::make_tuple(a...);
+    }
+    template<class...t2>
+    PacketData(const t2&... d): data(d...){}
+    PacketData(const std::tuple<t...>& d): data(d){}
+    PacketData():data(){}
+};
+
+// For using static length packets (static string lengths)
 template<char ID, class...t>
-struct _Packet
+struct Packet
 {
     template<int...strSizes>
-    struct Packet : Packet_Base {
-        std::tuple<t...> data;
+    struct StaticLength : Packet_Base, PacketData<t...> {
         const std::list<size_t> sizes;
-
-        Packet(): Packet_Base(ID,Packet_Tuple_Helpers::CountTupleElements( data , {strSizes...})), data(),sizes( {strSizes...}){}
+        StaticLength(): Packet_Base(ID), PacketData<t...>(),sizes( {strSizes...}){}
         template<class...t2>
-        Packet(const t2&... d): Packet_Base(ID,Packet_Tuple_Helpers::CountTupleElements( data , {strSizes...})), data(d...), sizes( {strSizes...}) {}
-        Packet(const Packet<strSizes...>& a): Packet_Base(a.id,a.len), data(a.data), sizes(a.sizes) {}
-        Packet<strSizes...>& operator=(const Packet<strSizes...>& a)
+        StaticLength(const t2&... d): Packet_Base(ID), PacketData<t...>(d...), sizes( {strSizes...}) {}
+        StaticLength(const StaticLength<strSizes...>& a): Packet_Base(a.id), PacketData<t...>(a.data), sizes(a.sizes) {}
+        StaticLength<strSizes...>& operator=(const StaticLength<strSizes...>& a)
         {
-            data = a.data;
+            this->data = a.data;
             return *this;
         }
-
-        template<size_t t2>
-        auto at() -> decltype( std::get<t2>(data) )
-        {
-            return std::get<t2>(data);
-        }
-        template<class...t2>
-        void set(t2&&...a)
-        {
-            data = std::make_tuple(a...);
-        }
-
         void send(boost::asio::ip::tcp::socket& s) const
         {
             s.send(boost::asio::buffer(&id,1));
-            std::cout << "Sent ID " << (int)id << std::endl;
-            Packet_Tuple_Helpers::const_tuple_for_each(data,Packet_Helpers::sendData(s,sizes.begin(), sizes.end()));
+            //std::cout << "Sent ID " << (int)id << std::endl;
+            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::sendStaticLengthData(s,sizes.begin(), sizes.end()));
         }
         void recv(boost::asio::ip::tcp::socket& s)
         {
-            Packet_Helpers::recvData ss(s,sizes.begin(), sizes.end());
-            Packet_Tuple_Helpers::tuple_for_each(data,ss);
+            Packet_Helpers::recvStaticLengthData ss(s,sizes.begin(), sizes.end());
+            Packet_Tuple_Helpers::tuple_for_each(this->data,ss);
             //std::cout << "Recieved ID " << (int)id << std::endl;
         }
 
         std::ostream& operator<<(std::ostream& s)const
         {
-            Packet_Tuple_Helpers::const_tuple_for_each(data,Packet_Helpers::outputData(s));
+            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::outputData(s));
+            return s;
+        }
+    };
+    struct DynamicLength : Packet_Base, PacketData<t...> {
+        DynamicLength(): Packet_Base(ID), PacketData<t...>(){}
+        template<class...t2>
+        DynamicLength(const t2&... d): Packet_Base(ID), PacketData<t...>(d...) {}
+        DynamicLength(const DynamicLength& a): Packet_Base(a.id), PacketData<t...>(a.data) {}
+        DynamicLength& operator=(const DynamicLength& a)
+        {
+            this->data = a.data;
+            return *this;
+        }
+        void send(boost::asio::ip::tcp::socket& s) const
+        {
+            s.send(boost::asio::buffer(&id,1));
+            //std::cout << "Sent ID " << (int)id << std::endl;
+            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::sendDynamicLengthData(s));
+        }
+        void recv(boost::asio::ip::tcp::socket& s)
+        {
+            Packet_Helpers::recvDynamicLengthData ss(s);
+            Packet_Tuple_Helpers::tuple_for_each(this->data,ss);
+            //std::cout << "Recieved ID " << (int)id << std::endl;
+        }
+
+        std::ostream& operator<<(std::ostream& s)const
+        {
+            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::outputData(s));
             return s;
         }
     };
 };
 
 
+
+
 template<char ID, class...t,int...t2>
-std::ostream& operator<<(std::ostream&s,const typename _Packet<ID,t...>::template Packet<t2...>& a )
+std::ostream& operator<<(std::ostream&s,const typename Packet<ID,t...>::template StaticLength<t2...>& a )
+{
+    return a.operator<<(s);
+}
+template<char ID, class...t>
+std::ostream& operator<<(std::ostream&s,const typename Packet<ID,t...>::DynamicLength& a )
 {
     return a.operator<<(s);
 }

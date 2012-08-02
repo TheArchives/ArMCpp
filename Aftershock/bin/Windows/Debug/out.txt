@@ -1,0 +1,1458 @@
+02:59:51.518600 - Info  - Server launched
+02:59:51.528600 - Info  - Created Plugin Handler
+02:59:51.529600 - Debug - Loading plugin 'ClassicPlugin'
+02:59:51.542600 - Debug - Loading Default map data
+02:59:51.543600 - Debug - Processing map...
+02:59:51.553600 - Debug - Blocks size: 262144, Zipped size: 2183
+02:59:51.554600 - Debug - 3 chunks
+02:59:51.555600 - Info  - Booted world 'Default'
+02:59:51.556600 - Debug - Imported player database.
+02:59:51.557600 - Debug - Added hooks
+02:59:51.557600 - ClassicPlugin - Loaded
+02:59:51.557600 - Info  - Loaded plugin 'ClassicPlugin'
+02:59:51.977600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+03:00:01.000600 - Debug - Got new connection
+03:00:01.002600 - Debug - Checking for player
+03:00:01.002600 - Debug - Is player
+03:00:01.002600 - Debug - 'Adam01' has returned
+03:00:01.018600 - Debug - Player(0, Adam01): Created instance
+03:00:01.022600 - Debug - Player(0, Adam01): Send map init
+03:00:01.056600 - Debug - Added player (0)
+03:00:01.109600 - Debug - Player(0, Adam01): Sent map chunk
+03:00:01.164600 - Debug - Player(0, Adam01): Sent map chunk
+03:00:01.216600 - Debug - Player(0, Adam01): Sent map chunk
+03:00:01.218600 - Debug - Player(0, Adam01): Sent map final
+03:00:01.219600 - Debug - Player(0, Adam01) joined World(Default)
+03:00:01.222600 - Debug - Player(0, Adam01) spawned in World(Default)
+03:00:01.223600 - Debug - Player(0, Adam01) spawned players in World(Default)
+03:00:05.544600 - Info  - Unloading plugins...
+03:00:05.544600 - Debug - Deleting players...
+03:00:05.551600 - Debug - Player(0, Adam01) unspawned from World(Default)
+03:00:05.553600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+03:00:05.555600 - Debug - Player(0, Adam01) left World(Default)
+03:00:05.556600 - Info  - Player(0, Adam01): Disconnected
+03:00:05.557600 - Debug - Done
+03:00:05.559600 - Debug - Saved player database.
+03:00:05.560600 - Debug - Shutting down worlds...
+03:00:05.561600 - Info  - Shutting down world 'Default'
+03:00:05.564600 - Debug - Done
+03:00:05.565600 - ClassicPlugin - 15:46:46.991400 - Info  - Server launched
+15:46:55.758600 - Info  - Created Plugin Handler
+15:46:55.758600 - Debug - Loading plugin 'ClassicPlugin'
+15:46:56.086200 - Debug - Loading Default map data
+15:46:56.086200 - Debug - Processing map...
+15:46:56.101800 - Debug - Blocks size: 262144, Zipped size: 2183
+15:46:56.101800 - Debug - 3 chunks
+15:46:56.101800 - Info  - Booted world 'Default'
+15:46:56.101800 - Debug - Imported player database.
+15:46:56.101800 - Debug - Added hooks
+15:46:56.101800 - ClassicPlugin - Loaded
+15:46:56.101800 - Info  - Loaded plugin 'ClassicPlugin'
+15:46:57.193800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:47:16.363600 - Debug - Got new connection
+15:47:16.364600 - Debug - Checking for player
+15:47:16.364600 - Debug - Is player
+15:47:16.364600 - Debug - 'Adam01' has returned
+15:47:16.408600 - Debug - Player(0, Adam01): Created instance
+15:47:16.409600 - Debug - Player(0, Adam01): Send map init
+15:47:16.410600 - Debug - Added player (0)
+15:47:16.464600 - Debug - Player(0, Adam01): Sent map chunk
+15:47:16.524600 - Debug - Player(0, Adam01): Sent map chunk
+15:47:16.578600 - Debug - Player(0, Adam01): Sent map chunk
+15:47:16.580600 - Debug - Player(0, Adam01): Sent map final
+15:47:16.581600 - Debug - Player(0, Adam01) joined World(Default)
+15:47:16.589600 - Debug - Player(0, Adam01) spawned in World(Default)
+15:47:16.590600 - Debug - Player(0, Adam01) spawned players in World(Default)
+15:47:19.961600 - Info  - Unloading plugins...
+15:47:19.962600 - Debug - Deleting players...
+15:47:19.971600 - Debug - Player(0, Adam01) unspawned from World(Default)
+15:47:19.973600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+15:47:19.975600 - Debug - Player(0, Adam01) left World(Default)
+15:47:19.976600 - Info  - Player(0, Adam01): Disconnected
+15:47:19.977600 - Debug - Done
+15:47:19.979600 - Debug - Saved player database.
+15:47:19.979600 - Debug - Shutting down worlds...
+15:47:19.980600 - Info  - Shutting down world 'Default'
+15:47:19.984600 - Debug - Done
+15:47:19.985600 - ClassicPlugin - 15:49:42.084600 - Info  - Server launched
+15:49:42.300600 - Info  - Created Plugin Handler
+15:49:42.300600 - Debug - Loading plugin 'ClassicPlugin'
+15:49:43.048600 - Debug - Loading Default map data
+15:49:43.048600 - Debug - Processing map...
+15:49:43.060600 - Debug - Blocks size: 262144, Zipped size: 2183
+15:49:43.062600 - Debug - 3 chunks
+15:49:43.063600 - Info  - Booted world 'Default'
+15:49:43.064600 - Debug - Imported player database.
+15:49:43.064600 - Debug - Added hooks
+15:49:43.065600 - ClassicPlugin - Loaded
+15:49:43.065600 - Info  - Loaded plugin 'ClassicPlugin'
+15:49:45.482600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:49:55.465600 - Debug - Got new connection
+15:49:55.486600 - Debug - Checking for player
+15:49:55.486600 - Debug - Is player
+15:49:55.487600 - Debug - 'Adam01' has returned
+15:49:55.495600 - Debug - Player(0, Adam01): Created instance
+15:49:55.504600 - Debug - Player(0, Adam01): Send map init
+15:49:55.505600 - Debug - Added player (0)
+15:49:55.562600 - Debug - Player(0, Adam01): Sent map chunk
+15:49:55.616600 - Debug - Player(0, Adam01): Sent map chunk
+15:49:55.683600 - Debug - Player(0, Adam01): Sent map chunk
+15:49:55.687600 - Debug - Player(0, Adam01): Sent map final
+15:49:55.687600 - Debug - Player(0, Adam01) joined World(Default)
+15:49:55.692600 - Debug - Player(0, Adam01) spawned in World(Default)
+15:49:55.694600 - Debug - Player(0, Adam01) spawned players in World(Default)
+15:50:18.761600 - Info  - Unloading plugins...
+15:50:18.762600 - Debug - Deleting players...
+15:50:18.768600 - Debug - Player(0, Adam01) unspawned from World(Default)
+15:50:18.769600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+15:50:18.770600 - Debug - Player(0, Adam01) left World(Default)
+15:50:18.771600 - Info  - Player(0, Adam01): Disconnected
+15:50:18.772600 - Debug - Done
+15:50:18.774600 - Debug - Saved player database.
+15:50:18.775600 - Debug - Shutting down worlds...
+15:50:18.776600 - Info  - Shutting down world 'Default'
+15:50:18.780600 - Debug - Done
+15:50:18.781600 - ClassicPlugin - 15:52:38.190600 - Info  - Server launched
+15:52:38.307600 - Info  - Created Plugin Handler
+15:52:38.307600 - Debug - Loading plugin 'ClassicPlugin'
+15:52:38.995600 - Debug - Loading Default map data
+15:52:38.995600 - Debug - Processing map...
+15:52:39.006600 - Debug - Blocks size: 262144, Zipped size: 2183
+15:52:39.006600 - Debug - 3 chunks
+15:52:39.007600 - Info  - Booted world 'Default'
+15:52:39.007600 - Debug - Imported player database.
+15:52:39.007600 - Debug - Added hooks
+15:52:39.007600 - ClassicPlugin - 15:53:07.288600 - Info  - Server launched
+15:53:07.303600 - Info  - Created Plugin Handler
+15:53:07.304600 - Debug - Loading plugin 'ClassicPlugin'
+15:53:07.322600 - Debug - Loading Default map data
+15:53:07.322600 - Debug - Processing map...
+15:53:07.332600 - Debug - Blocks size: 262144, Zipped size: 2183
+15:53:07.334600 - Debug - 3 chunks
+15:53:07.334600 - Info  - Booted world 'Default'
+15:53:07.335600 - Debug - Imported player database.
+15:53:07.337600 - Debug - Added hooks
+15:53:07.337600 - ClassicPlugin - Loaded
+15:53:07.338600 - Info  - Loaded plugin 'ClassicPlugin'
+15:53:07.830600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:53:42.590600 - Info  - Server launched
+15:53:42.691600 - Info  - Created Plugin Handler
+15:53:42.693600 - Debug - Loading plugin 'ClassicPlugin'
+15:53:43.434600 - Debug - Loading Default map data
+15:53:43.434600 - Debug - Processing map...
+15:53:43.447600 - Debug - Blocks size: 262144, Zipped size: 2183
+15:53:43.448600 - Debug - 3 chunks
+15:53:43.449600 - Info  - Booted world 'Default'
+15:53:43.450600 - Debug - Imported player database.
+15:53:43.451600 - Debug - Added hooks
+15:53:43.451600 - ClassicPlugin - Loaded
+15:53:43.452600 - Info  - Loaded plugin 'ClassicPlugin'
+15:53:45.555600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:53:51.256600 - Debug - Got new connection
+15:53:51.264600 - Debug - Checking for player
+15:53:51.264600 - Debug - Is player
+15:53:51.264600 - Debug - 'Adam01' has returned
+15:53:51.287600 - Debug - Player(0, Adam01): Created instance
+15:53:51.290600 - Debug - Player(0, Adam01): Send map init
+15:53:51.292600 - Debug - Added player (0)
+15:53:51.381600 - Debug - Player(0, Adam01): Sent map chunk
+15:53:51.445600 - Debug - Player(0, Adam01): Sent map chunk
+15:53:51.511600 - Debug - Player(0, Adam01): Sent map chunk
+15:53:51.523600 - Debug - Player(0, Adam01): Sent map final
+15:53:51.524600 - Debug - Player(0, Adam01) joined World(Default)
+15:53:51.544600 - Debug - Player(0, Adam01) spawned in World(Default)
+15:53:51.546600 - Debug - Player(0, Adam01) spawned players in World(Default)
+15:54:09.743600 - Info  - Unloading plugins...
+15:54:09.744600 - Debug - Deleting players...
+15:54:09.749600 - Debug - Player(0, Adam01) unspawned from World(Default)
+15:54:09.750600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+15:54:09.753600 - Debug - Player(0, Adam01) left World(Default)
+15:54:09.754600 - Info  - Player(0, Adam01): Disconnected
+15:54:09.756600 - Debug - Done
+15:54:09.757600 - Debug - Saved player database.
+15:54:09.758600 - Debug - Shutting down worlds...
+15:54:09.758600 - Info  - Shutting down world 'Default'
+15:54:09.762600 - Debug - Done
+15:54:09.763600 - ClassicPlugin - 15:57:56.662600 - Info  - Server launched
+15:57:56.762600 - Info  - Created Plugin Handler
+15:57:56.763600 - Debug - Loading plugin 'ClassicPlugin'
+15:57:57.496600 - Debug - Loading Default map data
+15:57:57.497600 - Debug - Processing map...
+15:57:57.511600 - Debug - Blocks size: 262144, Zipped size: 2183
+15:57:57.512600 - Debug - 3 chunks
+15:57:57.513600 - Info  - Booted world 'Default'
+15:57:57.514600 - Debug - Imported player database.
+15:57:57.514600 - Debug - Added hooks
+15:57:57.515600 - ClassicPlugin - Loaded
+15:57:57.515600 - Info  - Loaded plugin 'ClassicPlugin'
+15:57:59.772600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:58:07.450600 - Debug - Got new connection
+15:58:07.548600 - Debug - Checking for player
+15:58:07.549600 - Debug - Is player
+15:58:07.552600 - Debug - 'Adam01' has returned
+15:58:07.566600 - Debug - Player(0, Adam01): Created instance
+15:58:07.571600 - Debug - Player(0, Adam01): Send map init
+15:58:07.572600 - Debug - Added player (0)
+15:58:07.686600 - Debug - Player(0, Adam01): Sent map chunk
+15:58:07.739600 - Debug - Player(0, Adam01): Sent map chunk
+15:58:07.794600 - Debug - Player(0, Adam01): Sent map chunk
+15:58:07.797600 - Debug - Player(0, Adam01): Sent map final
+15:58:07.797600 - Debug - Player(0, Adam01) joined World(Default)
+15:58:07.802600 - Debug - Player(0, Adam01) spawned in World(Default)
+15:58:07.803600 - Debug - Player(0, Adam01) spawned players in World(Default)
+15:58:58.397600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+15:59:12.066600 - Info  - Unloading plugins...
+15:59:12.067600 - Debug - Deleting players...
+15:59:12.074600 - Debug - Player(0, Adam01) unspawned from World(Default)
+15:59:12.075600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+15:59:12.078600 - Debug - Player(0, Adam01) left World(Default)
+15:59:12.080600 - Info  - Player(0, Adam01): Disconnected
+15:59:12.081600 - Debug - Done
+15:59:12.083600 - Debug - Saved player database.
+15:59:12.083600 - Debug - Shutting down worlds...
+15:59:12.084600 - Info  - 16:07:00.104600 - Info  - Server launched
+16:07:00.204600 - Info  - Created Plugin Handler
+16:07:00.204600 - Debug - Loading plugin 'ClassicPlugin'
+16:07:00.843600 - Debug - Loading Default map data
+16:07:00.844600 - Debug - Processing map...
+16:07:00.855600 - Debug - Blocks size: 262144, Zipped size: 2183
+16:07:00.856600 - Debug - 3 chunks
+16:07:00.857600 - Info  - Booted world 'Default'
+16:07:00.858600 - Debug - Imported player database.
+16:07:00.858600 - Debug - Added hooks
+16:07:00.859600 - ClassicPlugin - Loaded
+16:07:00.860600 - Info  - Loaded plugin 'ClassicPlugin'
+16:07:02.498600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:07:10.702600 - Debug - Got new connection
+16:07:10.703600 - Debug - Checking for player
+16:07:10.703600 - Debug - Is player
+16:07:10.704600 - Debug - 'Adam01' has returned
+16:07:10.708600 - Debug - Player(0, Adam01): Created instance
+16:07:10.709600 - Debug - Player(0, Adam01): Send map init
+16:07:10.710600 - Debug - Added player (0)
+16:07:10.765600 - Debug - Player(0, Adam01): Sent map chunk
+16:07:10.818600 - Debug - Player(0, Adam01): Sent map chunk
+16:07:10.885600 - Debug - Player(0, Adam01): Sent map chunk
+16:07:10.887600 - Debug - Player(0, Adam01): Sent map final
+16:07:10.888600 - Debug - Player(0, Adam01) joined World(Default)
+16:07:10.891600 - Debug - Player(0, Adam01) spawned in World(Default)
+16:07:10.892600 - Debug - Player(0, Adam01) spawned players in World(Default)
+16:07:21.391600 - Info  - Unloading plugins...
+16:07:21.392600 - Debug - Deleting players...16:11:19.265600 - Info  - Server launched
+16:11:19.275600 - Info  - Created Plugin Handler
+16:11:19.276600 - Debug - Loading plugin 'ClassicPlugin'
+16:11:19.285600 - Debug - Loading Default map data
+16:11:19.286600 - Debug - Processing map...
+16:11:19.296600 - Debug - Blocks size: 262144, Zipped size: 2183
+16:11:19.297600 - Debug - 3 chunks
+16:11:19.298600 - Info  - Booted world 'Default'
+16:11:19.299600 - Debug - Imported player database.
+16:11:19.299600 - Debug - Added hooks
+16:11:19.300600 - ClassicPlugin - Loaded
+16:11:19.300600 - Info  - Loaded plugin 'ClassicPlugin'
+16:11:19.718600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:11:21.351600 - Info  - Unloading plugins...
+16:11:21.351600 - Debug - Deleting players...
+16:11:21.352600 - Debug - Done
+16:11:21.352600 - Debug - Saved player database.
+16:11:21.353600 - Debug - Shutting down worlds...
+16:11:21.355600 - Info  - Shutting down world 'Default'
+16:11:21.357600 - Debug - Done
+16:11:21.357600 - ClassicPlugin - Unloaded
+16:11:21.359600 - Info  - Unloaded plugin 'ClassicPlugin'
+16:11:21.359600 - Info  - Destroyed Plugin Handler
+16:11:21.361600 - Debug - Deleting server...
+16:11:21.361600 - Debug - 0 open connections
+16:11:21.362600 - Debug - Done
+16:11:21.363600 - Debug - Server engine returned: 0
+16:11:27.544600 - Info  - Server launched
+16:11:27.562600 - Info  - Created Plugin Handler
+16:11:27.563600 - Debug - Loading plugin 'ClassicPlugin'
+16:11:28.101600 - Debug - Loading Default map data
+16:11:28.102600 - Debug - Processing map...
+16:11:28.113600 - Debug - Blocks size: 262144, Zipped size: 2183
+16:11:28.114600 - Debug - 3 chunks
+16:11:28.115600 - Info  - Booted world 'Default'
+16:11:28.116600 - Debug - Imported player database.
+16:11:28.117600 - Debug - Added hooks
+16:11:28.117600 - ClassicPlugin - Loaded
+16:11:28.117600 - Info  - Loaded plugin 'ClassicPlugin'
+16:11:28.666600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:11:38.158600 - Debug - Got new connection
+16:11:38.160600 - Debug - Checking for player
+16:11:38.161600 - Debug - Is player
+16:11:38.161600 - Debug - 'Adam01' has returned
+16:11:38.171600 - Debug - Player(0, Adam01): Created instance
+16:11:38.173600 - Debug - Player(0, Adam01): Send map init
+16:11:38.175600 - Debug - Added player (0)
+16:11:38.229600 - Debug - Player(0, Adam01): Sent map chunk
+16:11:38.283600 - Debug - Player(0, Adam01): Sent map chunk
+16:11:38.337600 - Debug - Player(0, Adam01): Sent map chunk
+16:11:38.340600 - Debug - Player(0, Adam01): Sent map final
+16:11:38.341600 - Debug - Player(0, Adam01) joined World(Default)
+16:11:38.345600 - Debug - Player(0, Adam01) spawned in World(Default)
+16:11:38.345600 - Debug - Player(0, Adam01) spawned players in World(Default)
+16:12:28.672600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:13:28.535600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:14:28.517600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:15:28.499600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:16:28.603600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:17:28.618600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:18:28.524600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:19:28.533600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:20:28.508600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:21:28.531600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:22:28.502600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:23:28.510600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:24:28.639600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:25:28.524600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:26:28.541600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:27:28.536600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:28:28.615600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:29:28.533600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:30:28.400600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:31:28.478600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:32:28.679600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:33:28.529600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:34:28.492600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:35:28.541600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:36:28.386600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:37:28.511600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:38:28.530600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:39:28.510600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:40:28.562600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:41:28.570600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:42:28.550600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:43:28.497600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:44:28.486600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:45:28.523600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:46:28.508600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:47:28.617600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:48:28.492600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:49:30.450600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:50:28.561600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:51:28.485600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:52:31.875600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:53:28.512600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:54:28.568600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:55:28.473600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:56:28.469600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:57:28.538600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:58:28.481600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+16:59:28.511600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:00:28.509600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:01:28.524600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:02:28.589600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:03:28.432600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:04:28.493600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:05:28.549600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:06:28.578600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:07:28.530600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:08:28.550600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:09:28.496600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:10:28.528600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:11:28.531600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:12:28.528600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:13:28.504600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:14:28.527600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:15:28.531600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:16:28.456600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:17:28.505600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:18:28.511600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:19:28.490600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:20:28.570600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:21:28.518600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:22:28.570600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:23:28.589600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:24:28.475600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:25:28.493600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:26:28.556600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:27:28.522600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:28:29.611600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:29:28.537600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:30:28.538600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:32:28.567600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:33:28.553600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:34:28.963600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:35:28.494600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:36:28.489600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:37:28.549600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:38:28.657600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:39:28.452600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:40:28.610600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:41:28.533600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab17:44:03.019600 - Info  - Server launched
+17:44:03.040600 - Info  - Created Plugin Handler
+17:44:03.041600 - Debug - Loading plugin 'ClassicPlugin'
+17:44:03.613600 - Debug - Loading Default map data
+17:44:03.615600 - Debug - Processing map...
+17:44:03.627600 - Debug - Blocks size: 262144, Zipped size: 2183
+17:44:03.628600 - Debug - 3 chunks
+17:44:03.629600 - Info  - Booted world 'Default'
+17:44:03.630600 - Debug - Imported player database.
+17:44:03.631600 - Debug - Added hooks
+17:44:03.631600 - ClassicPlugin - Loaded
+17:44:03.632600 - Info  - Loaded plugin 'ClassicPlugin'
+17:44:04.215600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:44:11.612600 - Debug - Got new connection
+17:44:11.613600 - Debug - Checking for player
+17:44:11.613600 - Debug - Is player
+17:44:11.614600 - Debug - 'Adam01' has returned
+17:44:11.621600 - Debug - Player(0, Adam01): Created instance
+17:44:11.623600 - Debug - Player(0, Adam01): Send map init
+17:44:11.625600 - Debug - Added player (0)
+17:44:11.680600 - Debug - Player(0, Adam01): Sent map chunk
+17:44:11.742600 - Debug - Player(0, Adam01): Sent map chunk
+17:44:11.823600 - Debug - Player(0, Adam01): Sent map chunk
+17:44:11.825600 - Debug - Player(0, Adam01): Sent map final
+17:44:11.826600 - Debug - Player(0, Adam01) joined World(Default)
+17:44:11.829600 - Debug - Player(0, Adam01) spawned in World(Default)
+17:44:11.830600 - Debug - Player(0, Adam01) spawned players in World(Default)
+17:44:23.695600 - Info  - Unloading plugins...
+17:44:23.696600 - Debug - Deleting players...
+17:44:23.702600 - Debug - Player(0, Adam01) unspawned from World(Default)
+17:44:23.703600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+17:44:23.706600 - Debug - Player(0, Adam01) left World(Default)
+17:44:23.708600 - Info  - Player(0, Adam01): Disconnected
+17:44:23.710600 - Debug - Done
+17:44:23.711600 - Debug - Saved player database.
+17:44:23.712600 - Debug - Shutting down worlds...
+17:44:23.713600 - Info  - Shutting down world 'Default'
+17:44:23.717600 - Debug - Done
+17:44:23.717600 - ClassicPlugin - 17:46:22.834600 - Info  - Server launched
+17:46:22.898600 - Info  - Created Plugin Handler
+17:46:22.899600 - Debug - Loading plugin 'ClassicPlugin'
+17:46:22.909600 - Debug - Loading Default map data
+17:46:22.909600 - Debug - Processing map...
+17:46:22.920600 - Debug - Blocks size: 262144, Zipped size: 2183
+17:46:22.921600 - Debug - 3 chunks
+17:46:22.922600 - Info  - Booted world 'Default'
+17:46:22.923600 - Debug - Imported player database.
+17:46:22.923600 - Debug - Added hooks
+17:46:22.924600 - ClassicPlugin - Loaded
+17:46:22.924600 - Info  - Loaded plugin 'ClassicPlugin'
+17:46:23.341600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+17:46:32.351600 - Debug - Got new connection
+17:46:32.352600 - Debug - Checking for player
+17:46:32.352600 - Debug - Is player
+17:46:32.354600 - Debug - 'Adam01' has returned
+17:46:32.364600 - Debug - Player(0, Adam01): Created instance
+17:46:32.365600 - Debug - Player(0, Adam01): Send map init
+17:46:32.367600 - Debug - Added player (0)
+17:46:32.420600 - Debug - Player(0, Adam01): Sent map chunk
+17:46:32.473600 - Debug - Player(0, Adam01): Sent map chunk
+17:46:32.526600 - Debug - Player(0, Adam01): Sent map chunk
+17:46:32.530600 - Debug - Player(0, Adam01): Sent map final
+17:46:32.531600 - Debug - Player(0, Adam01) joined World(Default)
+17:46:32.533600 - Debug - Player(0, Adam01) spawned in World(Default)
+17:46:32.534600 - Debug - Player(0, Adam01) spawned players in World(Default)
+17:46:35.285600 - Info  - Unloading plugins...
+17:46:35.288600 - Debug - Deleting players...
+17:46:35.296600 - Debug - Player(0, Adam01) unspawned from World(Default)
+17:46:35.297600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+17:46:35.298600 - Debug - Player(0, Adam01) left World(Default)
+17:46:35.298600 - Info  - Player(0, Adam01): Disconnected
+17:46:35.299600 - Debug - Done
+17:46:35.300600 - Debug - Saved player database.
+17:46:35.300600 - Debug - Shutting down worlds...
+17:46:35.302600 - Info  - Shutting down world 'Default'
+17:46:35.305600 - Debug - Done
+17:46:35.305600 - ClassicPlugin - 17:59:59.686800 - Info  - Server launched
+17:59:59.758800 - Info  - Created Plugin Handler
+17:59:59.761800 - Debug - Loading plugin 'ClassicPlugin'
+18:00:00.388800 - Debug - Loading Default map data
+18:00:00.389800 - Debug - Processing map...
+18:00:00.400800 - Debug - Blocks size: 262144, Zipped size: 2183
+18:00:00.401800 - Debug - 3 chunks
+18:00:00.402800 - Info  - Booted world 'Default'
+18:00:00.403800 - Debug - Imported player database.
+18:00:00.403800 - Debug - Added hooks
+18:00:00.404800 - ClassicPlugin - Loaded
+18:00:00.404800 - Info  - Loaded plugin 'ClassicPlugin'
+18:00:00.967800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+18:00:12.465800 - Debug - Got new connection
+18:00:12.465800 - Debug - Checking for player
+18:00:12.465800 - Debug - Is player
+18:00:12.466800 - Debug - 'Adam01' has returned
+18:00:12.472800 - Debug - Player(0, Adam01): Created instance
+18:00:12.474800 - Debug - Player(0, Adam01): Send map init
+18:00:12.475800 - Debug - Added player (0)
+18:00:12.531800 - Debug - Player(0, Adam01): Sent map chunk
+18:00:12.585800 - Debug - Player(0, Adam01): Sent map chunk
+18:00:12.672800 - Debug - Player(0, Adam01): Sent map chunk
+18:00:12.674800 - Debug - Player(0, Adam01): Sent map final
+18:00:12.675800 - Debug - Player(0, Adam01) joined World(Default)
+18:00:12.678800 - Debug - Player(0, Adam01) spawned in World(Default)
+18:00:12.679800 - Debug - Player(0, Adam01) spawned players in World(Default)
+18:00:20.221800 - Info  - Unloading plugins...
+18:00:20.222800 - Debug - Deleting players...
+18:00:20.235800 - Error - Player(0, Adam01): Caught boost exception in player send
+18:00:20.237800 - Debug - Player(0, Adam01) unspawned from World(Default)
+18:00:20.239800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+18:00:20.240800 - Debug - Player(0, Adam01) left World(Default)
+18:00:20.243800 - Info  - Player(0, Adam01): Disconnected
+18:00:20.244800 - Debug - Done
+18:00:20.246800 - Debug - Saved player database.
+18:00:20.246800 - Debug - Shutting down worlds...
+18:00:20.247800 - Info  - 01:43:27.755600 - Info  - Server launched
+01:43:27.833600 - Info  - Created Plugin Handler
+01:43:27.833600 - Debug - Loading plugin 'ClassicPlugin'
+01:43:28.566800 - Debug - Loading Default map data
+01:43:28.566800 - Debug - Processing map...
+01:43:28.582400 - Debug - Blocks size: 262144, Zipped size: 2183
+01:43:28.582400 - Debug - 3 chunks
+01:43:28.582400 - Info  - Booted world 'Default'
+01:43:28.582400 - Debug - Imported player database.
+01:43:28.582400 - Debug - Added hooks
+01:43:28.582400 - ClassicPlugin - Loaded
+01:43:28.582400 - Info  - Loaded plugin 'ClassicPlugin'
+01:43:29.237600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+01:44:05.273800 - Debug - Got new connection
+01:44:05.274800 - Debug - Checking for player
+01:44:05.274800 - Debug - Is player
+01:44:05.274800 - Debug - 'Adam01' has returned
+01:44:05.281800 - Debug - Player(0, Adam01): Created instance
+01:44:05.285800 - Debug - Player(0, Adam01): Send map init
+01:44:05.287800 - Debug - Added player (0)
+01:44:05.339800 - Debug - Player(0, Adam01): Sent map chunk
+01:44:05.393800 - Debug - Player(0, Adam01): Sent map chunk
+01:44:05.458800 - Debug - Player(0, Adam01): Sent map chunk
+01:44:05.460800 - Debug - Player(0, Adam01): Sent map final
+01:44:05.460800 - Debug - Player(0, Adam01) joined World(Default)
+01:44:05.464800 - Debug - Player(0, Adam01) spawned in World(Default)
+01:44:05.464800 - Debug - Player(0, Adam01) spawned players in World(Default)
+01:44:16.671800 - Info  - Unloading plugins...
+01:44:16.672800 - Debug - Deleting players...
+01:44:16.675800 - Debug - Player(0, Adam01) unspawned from World(Default)
+01:44:16.676800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+01:44:16.676800 - Debug - Player(0, Adam01) left World(Default)
+01:44:16.677800 - Info  - Player(0, Adam01): Disconnected
+01:44:16.678800 - Debug - Done
+01:44:16.680800 - Debug - Saved player database.
+01:44:16.683800 - Debug - Shutting down worlds...
+01:44:16.684800 - Info  - Shutting down world 'Default'
+01:44:16.687800 - Debug - Done
+01:44:16.688800 - ClassicPlugin - 01:45:46.997800 - Info  - Server launched
+01:45:47.019800 - Info  - Created Plugin Handler
+01:45:47.019800 - Debug - Loading plugin 'ClassicPlugin'
+01:45:48.018800 - Debug - Loading Default map data
+01:45:48.019800 - Debug - Processing map...
+01:45:48.029800 - Debug - Blocks size: 262144, Zipped size: 2183
+01:45:48.030800 - Debug - 3 chunks
+01:45:48.032800 - Info  - Booted world 'Default'
+01:45:48.033800 - Debug - Imported player database.
+01:45:48.033800 - Debug - Added hooks
+01:45:48.034800 - ClassicPlugin - Loaded
+01:45:48.034800 - Info  - Loaded plugin 'ClassicPlugin'
+01:45:48.631800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+01:45:52.416800 - Debug - Got new connection
+01:45:52.417800 - Debug - Checking for player
+01:45:52.417800 - Debug - Is player
+01:45:52.418800 - Debug - 'Adam01' has returned
+01:45:52.425800 - Debug - Player(0, Adam01): Created instance
+01:45:52.428800 - Debug - Player(0, Adam01): Send map init
+01:45:52.430800 - Debug - Added player (0)
+01:45:52.487800 - Debug - Player(0, Adam01): Sent map chunk
+01:45:52.623800 - Debug - Player(0, Adam01): Sent map chunk
+01:45:52.678800 - Debug - Player(0, Adam01): Sent map chunk
+01:45:52.680800 - Debug - Player(0, Adam01): Sent map final
+01:45:52.681800 - Debug - Player(0, Adam01) joined World(Default)
+01:45:52.684800 - Debug - Player(0, Adam01) spawned in World(Default)
+01:45:52.685800 - Debug - Player(0, Adam01) spawned players in World(Default)
+01:46:00.898800 - Info  - Unloading plugins...
+01:46:00.899800 - Debug - Deleting players...
+01:46:00.905800 - Debug - Player(0, Adam01) unspawned from World(Default)
+01:46:00.906800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+01:46:00.908800 - Debug - Player(0, Adam01) left World(Default)
+01:46:00.911800 - Info  - Player(0, Adam01): Disconnected
+01:46:00.913800 - Debug - Done
+01:46:00.914800 - Debug - Saved player database.
+01:46:00.915800 - Debug - Shutting down worlds...
+01:46:00.916800 - Info  - Shutting down world 'Default'
+01:46:00.918800 - Debug - Done
+01:46:00.919800 - ClassicPlugin - 04:58:43.895600 - Info  - Server launched
+04:58:43.905600 - Info  - Created Plugin Handler
+04:58:43.905600 - Debug - Loading plugin 'ClassicPlugin'
+04:58:43.916600 - Debug - Loading Default map data
+04:58:43.917600 - Debug - Processing map...
+04:58:43.927600 - Debug - Blocks size: 262144, Zipped size: 2183
+04:58:43.928600 - Debug - 3 chunks
+04:58:43.928600 - Info  - Booted world 'Default'
+04:58:43.929600 - Debug - Imported player database.
+04:58:43.930600 - Debug - Added hooks
+04:58:43.930600 - ClassicPlugin - Loaded
+04:58:43.931600 - Info  - Loaded plugin 'ClassicPlugin'
+04:58:44.784600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+04:58:59.963600 - Debug - Got new connection
+04:58:59.981600 - Debug - Checking for player
+04:58:59.981600 - Debug - Is player
+04:58:59.982600 - Debug - 'Adam01' has returned
+04:58:59.988600 - Debug - Player(0, Adam01): Created instance
+04:58:59.990600 - Debug - Player(0, Adam01): Send map init
+04:58:59.991600 - Debug - Added player (0)
+04:59:00.056600 - Debug - Player(0, Adam01): Sent map chunk
+04:59:00.110600 - Debug - Player(0, Adam01): Sent map chunk
+04:59:00.171600 - Debug - Player(0, Adam01): Sent map chunk
+04:59:00.173600 - Debug - Player(0, Adam01): Sent map final
+04:59:00.174600 - Debug - Player(0, Adam01) joined World(Default)
+04:59:00.177600 - Debug - Player(0, Adam01) spawned in World(Default)
+04:59:00.177600 - Debug - Player(0, Adam01) spawned players in World(Default)
+04:59:11.610600 - Info  - Unloading plugins...
+04:59:11.610600 - Debug - Deleting players...
+04:59:11.616600 - Debug - Player(0, Adam01) unspawned from World(Default)
+04:59:11.618600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+04:59:11.620600 - Debug - Player(0, Adam01) left World(Default)
+04:59:11.621600 - Info  - Player(0, Adam01): Disconnected
+04:59:11.623600 - Debug - Done
+04:59:11.624600 - Debug - Saved player database.
+04:59:11.625600 - Debug - Shutting down worlds...
+04:59:11.626600 - Info  - Shutting down world 'Default'
+04:59:11.628600 - Debug - Done
+04:59:11.629600 - ClassicPlugin - Unloaded
+04:59:11.631600 - Info  - Unloaded plugin 'ClassicPlugin'
+04:59:11.632600 - Info  - Destroyed Plugin Handler
+04:59:11.633600 - Debug - Deleting server...
+04:59:11.634600 - Debug - 1 open connections
+04:59:11.635600 - Debug - Connection: 0x10619fc 1 existances
+04:59:11.637600 - Debug - Done
+04:59:11.638600 - Debug - Server engine returned: 0
+05:10:49.945600 - Info  - Server launched
+05:10:49.956600 - Info  - Created Plugin Handler
+05:10:49.957600 - Debug - Loading plugin 'ClassicPlugin'
+05:10:49.970600 - Debug - Loading Default map data
+05:10:49.970600 - Debug - Processing map...
+05:10:49.980600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:10:49.982600 - Debug - 3 chunks
+05:10:49.983600 - Info  - Booted world 'Default'
+05:10:49.983600 - Debug - Imported player database.
+05:10:49.984600 - Debug - Added hooks
+05:10:49.984600 - ClassicPlugin - Loaded
+05:10:49.985600 - Info  - Loaded plugin 'ClassicPlugin'
+05:10:51.036600 - Info  - Unloading plugins...
+05:10:51.036600 - Debug - Deleting players...
+05:10:51.036600 - Debug - Done
+05:10:51.037600 - Debug - Saved player database.
+05:10:51.038600 - Debug - Shutting down worlds...
+05:10:51.038600 - Info  - Shutting down world 'Default'
+05:10:51.040600 - Debug - Done
+05:10:51.041600 - ClassicPlugin - Unloaded
+05:10:51.043600 - Info  - Unloaded plugin 'ClassicPlugin'
+05:10:51.044600 - Info  - Destroyed Plugin Handler
+05:10:51.045600 - Debug - Deleting server...
+05:10:51.046600 - Debug - 0 open connections
+05:10:51.047600 - Debug - Done
+05:10:51.053600 - Debug - Server engine returned: 0
+05:10:51.735600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:11:23.757600 - Info  - Server launched
+05:11:23.768600 - Info  - Created Plugin Handler
+05:11:23.768600 - Debug - Loading plugin 'ClassicPlugin'
+05:11:23.827600 - Debug - Loading Default map data
+05:11:23.828600 - Debug - Processing map...
+05:11:23.838600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:11:23.839600 - Debug - 3 chunks
+05:11:23.839600 - Info  - Booted world 'Default'
+05:11:23.840600 - Debug - Imported player database.
+05:11:23.841600 - Debug - Added hooks
+05:11:23.841600 - ClassicPlugin - Loaded
+05:11:23.842600 - Info  - Loaded plugin 'ClassicPlugin'
+05:11:24.574600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:11:34.945600 - Debug - Got new connection
+05:11:34.946600 - Debug - Checking for player
+05:11:34.949600 - Debug - Is player
+05:11:34.951600 - Debug - 'Adam01' has returned
+05:11:34.960600 - Debug - Player(0, Adam01): Created instance
+05:11:34.961600 - Debug - Player(0, Adam01): Send map init
+05:11:34.962600 - Debug - Added player (0)
+05:11:35.017600 - Debug - Player(0, Adam01): Sent map chunk
+05:11:35.071600 - Debug - Player(0, Adam01): Sent map chunk
+05:11:35.126600 - Debug - Player(0, Adam01): Sent map chunk
+05:11:35.128600 - Debug - Player(0, Adam01): Sent map final
+05:11:35.137600 - Debug - Player(0, Adam01) joined World(Default)
+05:11:35.140600 - Debug - Player(0, Adam01) spawned in World(Default)
+05:11:35.141600 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:11:42.629600 - Info  - Unloading plugins...
+05:11:42.630600 - Debug - Deleting players...
+05:11:42.636600 - Debug - Player(0, Adam01) unspawned from World(Default)
+05:11:42.637600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+05:11:42.640600 - Debug - Player(0, Adam01) left World(Default)
+05:11:42.641600 - Info  - Player(0, Adam01): Disconnected
+05:11:42.643600 - Debug - Done
+05:11:42.645600 - Debug - Saved player database.
+05:11:42.645600 - Debug - Shutting down worlds...
+05:11:42.646600 - Info  - Shutting down world 'Default'
+05:11:42.649600 - Debug - Done
+05:11:42.649600 - ClassicPlugin - 05:25:38.875600 - Info  - Server launched
+05:25:38.886600 - Info  - Created Plugin Handler
+05:25:38.888600 - Debug - Loading plugin 'ClassicPlugin'
+05:25:38.901600 - Debug - Loading Default map data
+05:25:38.902600 - Debug - Processing map...
+05:25:38.912600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:25:38.914600 - Debug - 3 chunks
+05:25:38.915600 - Info  - Booted world 'Default'
+05:25:38.916600 - Debug - Imported player database.
+05:25:38.916600 - Debug - Added hooks
+05:25:38.917600 - ClassicPlugin - Loaded
+05:25:38.917600 - Info  - Loaded plugin 'ClassicPlugin'
+05:25:40.207600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:25:49.811600 - Debug - Got new connection
+05:25:49.814600 - Debug - Checking for player
+05:25:49.814600 - Debug - Is player
+05:25:49.815600 - Debug - 'Adam01' has returned
+05:25:49.822600 - Debug - Player(0, Adam01): Created instance
+05:25:49.825600 - Debug - Player(0, Adam01): Send map init
+05:25:49.826600 - Debug - Added player (0)
+05:25:49.939600 - Debug - Player(0, Adam01): Sent map chunk
+05:25:50.075600 - Debug - Player(0, Adam01): Sent map chunk
+05:25:50.129600 - Debug - Player(0, Adam01): Sent map chunk
+05:25:50.132600 - Debug - Player(0, Adam01): Sent map final
+05:25:50.133600 - Debug - Player(0, Adam01) joined World(Default)
+05:25:50.136600 - Debug - Player(0, Adam01) spawned in World(Default)
+05:25:50.137600 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:25:54.144600 - Info  - Unloading plugins...
+05:25:54.144600 - Debug - Deleting players...05:28:19.611600 - Info  - Server launched
+05:28:19.624600 - Info  - Created Plugin Handler
+05:28:19.625600 - Debug - Loading plugin 'ClassicPlugin'
+05:28:19.639600 - Debug - Loading Default map data
+05:28:19.639600 - Debug - Processing map...
+05:28:19.650600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:28:19.651600 - Debug - 3 chunks
+05:28:19.651600 - Info  - Booted world 'Default'
+05:28:19.652600 - Debug - Imported player database.
+05:28:19.653600 - Debug - Added hooks
+05:28:19.653600 - ClassicPlugin - Loaded
+05:28:19.654600 - Info  - Loaded plugin 'ClassicPlugin'
+05:28:21.697600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:28:31.169600 - Debug - Got new connection
+05:28:31.169600 - Debug - Checking for player
+05:28:31.170600 - Debug - Is player
+05:28:31.170600 - Debug - 'Adam01' has returned
+05:28:31.173600 - Debug - Player(0, Adam01): Created instance
+05:28:31.174600 - Debug - Player(0, Adam01): Send map init
+05:28:31.175600 - Debug - Added player (0)
+05:28:31.228600 - Debug - Player(0, Adam01): Sent map chunk
+05:28:31.287600 - Debug - Player(0, Adam01): Sent map chunk
+05:28:31.343600 - Debug - Player(0, Adam01): Sent map chunk
+05:28:31.345600 - Debug - Player(0, Adam01): Sent map final
+05:28:31.346600 - Debug - Player(0, Adam01) joined World(Default)
+05:28:31.350600 - Debug - Player(0, Adam01) spawned in World(Default)
+05:28:31.351600 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:28:36.410600 - Info  - Unloading plugins...
+05:28:36.410600 - Debug - Deleting players...05:35:46.026600 - Info  - Server launched
+05:35:46.039600 - Info  - Created Plugin Handler
+05:35:46.040600 - Debug - Loading plugin 'ClassicPlugin'
+05:35:46.055600 - Debug - Loading Default map data
+05:35:46.055600 - Debug - Processing map...
+05:35:46.066600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:35:46.069600 - Debug - 3 chunks
+05:35:46.070600 - Info  - Booted world 'Default'
+05:35:46.071600 - Debug - Imported player database.
+05:35:46.071600 - Debug - Added hooks
+05:35:46.071600 - ClassicPlugin - Loaded
+05:35:46.072600 - Info  - Loaded plugin 'ClassicPlugin'
+05:35:46.780600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:36:16.866600 - Info  - Server launched
+05:36:18.250600 - Info  - Created Plugin Handler
+05:36:18.251600 - Debug - Loading plugin 'ClassicPlugin'
+05:36:18.262600 - Debug - Loading Default map data
+05:36:18.263600 - Debug - Processing map...
+05:36:18.272600 - Debug - Blocks size: 262144, Zipped size: 2183
+05:36:18.273600 - Debug - 3 chunks
+05:36:18.274600 - Info  - Booted world 'Default'
+05:36:18.274600 - Debug - Imported player database.
+05:36:18.275600 - Debug - Added hooks
+05:36:18.275600 - ClassicPlugin - Loaded
+05:36:18.276600 - Info  - Loaded plugin 'ClassicPlugin'
+05:36:19.380600 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:36:31.516600 - Debug - Got new connection
+05:36:31.541600 - Debug - Checking for player
+05:36:31.542600 - Debug - Is player
+05:36:31.542600 - Debug - 'Adam01' has returned
+05:36:31.549600 - Debug - Player(0, Adam01): Created instance
+05:36:31.551600 - Debug - Player(0, Adam01): Send map init
+05:36:31.553600 - Debug - Added player (0)
+05:36:31.613600 - Debug - Player(0, Adam01): Sent map chunk
+05:36:31.667600 - Debug - Player(0, Adam01): Sent map chunk
+05:36:31.721600 - Debug - Player(0, Adam01): Sent map chunk
+05:36:31.723600 - Debug - Player(0, Adam01): Sent map final
+05:36:31.724600 - Debug - Player(0, Adam01) joined World(Default)
+05:36:31.728600 - Debug - Player(0, Adam01) spawned in World(Default)
+05:36:31.729600 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:36:36.186600 - Info  - Unloading plugins...
+05:36:36.186600 - Debug - Deleting players...
+05:36:36.199600 - Debug - Player(0, Adam01) unspawned players from World(Default)
+05:36:36.200600 - Debug - Player(0, Adam01) left World(Default)
+05:36:36.202600 - Info  - Player(0, Adam01): Disconnected
+05:36:36.203600 - Debug - Done
+05:36:36.206600 - Debug - Saved player database.
+05:36:36.206600 - Debug - Shutting down worlds...
+05:36:36.208600 - Info  - Shutting down world 'Default'
+05:36:36.212600 - Debug - Done
+05:36:36.213600 - ClassicPlugin - Unloaded
+05:36:36.215600 - Info  - Unloaded plugin 'ClassicPlugin05:41:23.818600 - Info  - Server launched
+05:41:23.834200 - Info  - Created Plugin Handler
+05:41:23.834200 - Debug - Loading plugin 'ClassicPlugin'
+05:41:23.834200 - Debug - Loading Default map data
+05:41:23.834200 - Debug - Processing map...
+05:41:23.849800 - Debug - Blocks size: 262144, Zipped size: 2183
+05:41:23.849800 - Debug - 3 chunks
+05:41:23.849800 - Info  - Booted world 'Default'
+05:41:23.849800 - Debug - Imported player database.
+05:41:23.849800 - Debug - Added hooks
+05:41:23.849800 - ClassicPlugin - Loaded
+05:41:23.849800 - Info  - Loaded plugin 'ClassicPlugin'
+05:41:24.661000 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:41:52.463400 - Debug - Got new connection
+05:41:52.463400 - Debug - Checking for player
+05:41:52.463400 - Debug - Is player
+05:41:52.464400 - Debug - 'Adam01' has returned
+05:41:52.467400 - Debug - Player(0, Adam01): Created instance
+05:41:52.471400 - Debug - Player(0, Adam01): Send map init
+05:41:52.475400 - Debug - Added player (0)
+05:41:52.528400 - Debug - Player(0, Adam01): Sent map chunk
+05:41:52.600400 - Debug - Player(0, Adam01): Sent map chunk
+05:41:52.656400 - Debug - Player(0, Adam01): Sent map chunk
+05:41:52.659400 - Debug - Player(0, Adam01): Sent map final
+05:41:52.660400 - Debug - Player(0, Adam01) joined World(Default)
+05:41:52.663400 - Debug - Player(0, Adam01) spawned in World(Default)
+05:41:52.664400 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:41:56.077400 - Info  - Unloading plugins...
+05:41:56.077400 - Debug - Kicking players...05:42:43.900400 - Info  - Server launched
+05:42:43.911400 - Info  - Created Plugin Handler
+05:42:43.911400 - Debug - Loading plugin 'ClassicPlugin'
+05:42:43.991400 - Debug - Loading Default map data
+05:42:43.992400 - Debug - Processing map...
+05:42:44.002400 - Debug - Blocks size: 262144, Zipped size: 2183
+05:42:44.004400 - Debug - 3 chunks
+05:42:44.004400 - Info  - Booted world 'Default'
+05:42:44.006400 - Debug - Imported player database.
+05:42:44.006400 - Debug - Added hooks
+05:42:44.007400 - ClassicPlugin - Loaded
+05:42:44.008400 - Info  - Loaded plugin 'ClassicPlugin'
+05:42:45.907400 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:43:01.975200 - Debug - Got new connection
+05:43:01.975200 - Debug - Checking for player
+05:43:01.975200 - Debug - Is player
+05:43:01.976200 - Debug - 'Adam01' has returned
+05:43:01.980200 - Debug - Player(0, Adam01): Created instance
+05:43:01.981200 - Debug - Player(0, Adam01): Send map init
+05:43:01.981200 - Debug - Added player (0)
+05:43:02.042200 - Debug - Player(0, Adam01): Sent map chunk
+05:43:02.096200 - Debug - Player(0, Adam01): Sent map chunk
+05:43:02.152200 - Debug - Player(0, Adam01): Sent map chunk
+05:43:02.154200 - Debug - Player(0, Adam01): Sent map final
+05:43:02.154200 - Debug - Player(0, Adam01) joined World(Default)
+05:43:02.159200 - Debug - Player(0, Adam01) spawned in World(Default)
+05:43:02.160200 - Debug - Player(0, Adam01) spawned players in World(Default)
+05:43:04.960200 - Info  - Unloading plugins...
+05:43:04.960200 - Debug - Kicking players...
+05:43:04.963200 - Debug - Player(0, Adam01) unspawned from World(Default)
+05:43:04.963200 - Debug - Player(0, Adam01) unspawned players from World(Default)
+05:43:04.964200 - Debug - Player(0, Adam01) left World(Default)
+05:43:04.965200 - Info  - Player(0, Adam01): Disconnected
+05:43:04.965200 - Debug - Deleting players...
+05:43:04.966200 - Debug - Done
+05:43:04.967200 - Debug - Saved player database.
+05:43:04.967200 - Debug - Shutting down worlds...
+05:43:04.967200 - Info  - Shutting down world 'Default'
+05:43:04.969200 - Debug - Done
+05:43:04.970200 - ClassicPlugin - Unloaded
+05:43:04.971200 - Info  - Unloaded plugin 'ClassicPlugin'
+05:43:04.971200 - Info  - Destroyed Plugin Handler
+05:43:04.972200 - Debug - Deleting server...
+05:43:04.972200 - Debug - 0 open connections
+05:43:04.974200 - Debug - Done
+05:43:04.974200 - Debug - Server engine returned: 0
+05:43:10.568200 - Info  - Restarting server on user request
+05:43:10.576200 - Info  - Created Plugin Handler
+05:43:10.577200 - Debug - Loading plugin 'ClassicPlugin'
+05:43:10.597200 - Debug - Loading Default map data
+05:43:10.598200 - Debug - Processing map...
+05:43:10.609200 - Debug - Blocks size: 262144, Zipped size: 2183
+05:43:10.611200 - Debug - 3 chunks
+05:43:10.612200 - Info  - Booted world 'Default'
+05:43:10.613200 - Debug - Imported player database.
+05:43:10.614200 - Debug - Added hooks
+05:43:10.615200 - ClassicPlugin - Loaded
+05:43:10.616200 - Info  - Loaded plugin 'ClassicPlugin'
+05:43:11.722200 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+05:43:13.271200 - Info  - Unloading plugins...
+05:43:13.271200 - Debug - Kicking players...
+05:43:13.272200 - Debug - Deleting players...
+05:43:13.274200 - Debug - Done
+05:43:13.276200 - Debug - Saved player database.
+05:43:13.276200 - Debug - Shutting down worlds...
+05:43:13.277200 - Info  - Shutting down world 'Default'
+05:43:13.280200 - Debug - Done
+05:43:13.280200 - ClassicPlugin - Unloaded
+05:43:13.281200 - Info  - Unloaded plugin 'ClassicPlugin'
+05:43:13.282200 - Info  - Destroyed Plugin Handler
+05:43:13.283200 - Debug - Deleting server...
+05:43:13.284200 - Debug - 0 open connections
+05:43:13.288200 - Debug - Done
+05:43:13.299200 - Debug - Server engine returned: 0
+06:08:18.750000 - Info  - Server launched
+06:08:18.750000 - Info  - Created Plugin Handler
+06:08:18.750000 - Debug - Loading plugin 'ClassicPlugin'
+06:08:18.765600 - Debug - Loading Default map data
+06:08:18.765600 - Debug - Processing map...
+06:08:18.781200 - Debug - Blocks size: 262144, Zipped size: 2183
+06:08:18.781200 - Debug - 3 chunks
+06:08:18.781200 - Info  - Booted world 'Default'
+06:08:18.781200 - Debug - Imported player database.
+06:08:18.781200 - Debug - Added hooks
+06:08:18.781200 - ClassicPlugin - Loaded
+06:08:18.781200 - Info  - Loaded plugin 'ClassicPlugin'
+06:08:19.218000 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:08:31.597800 - Debug - Got new connection
+06:08:31.598800 - Debug - Checking for player
+06:08:31.598800 - Debug - Is player
+06:08:31.599800 - Debug - 'Adam01' has returned
+06:08:31.605800 - Debug - Player(0, Adam01): Created instance
+06:08:31.607800 - Debug - Player(0, Adam01): Send map init
+06:08:31.608800 - Debug - Added player (0)
+06:08:31.662800 - Debug - Player(0, Adam01): Sent map chunk
+06:08:31.715800 - Debug - Player(0, Adam01): Sent map chunk
+06:08:31.770800 - Debug - Player(0, Adam01): Sent map chunk
+06:08:31.772800 - Debug - Player(0, Adam01): Sent map final
+06:08:31.772800 - Debug - Player(0, Adam01) joined World(Default)
+06:08:31.775800 - Debug - Player(0, Adam01) spawned in World(Default)
+06:08:31.777800 - Debug - Player(0, Adam01) spawned players in World(Default)
+06:09:00.229800 - Info  - Unloading plugins...
+06:09:00.229800 - Debug - Deleting players...
+06:09:00.233800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+06:09:00.235800 - Debug - Player(0, Adam01) left World(Default)
+06:09:00.236800 - Info  - Player(0, Adam01): Disconnected
+06:09:00.238800 - Debug - Done
+06:09:00.240800 - Debug - Saved player database.
+06:09:00.240800 - Debug - Shutting down worlds...
+06:09:00.241800 - Info  - Shutting down world 'Default'
+06:09:00.243800 - Debug - Done
+06:09:00.245800 - ClassicPlugin - Unloaded
+06:09:00.246800 - Info  - Unloaded plugin 'ClassicPlugin'
+06:09:00.247800 - Info  - Destroyed Plugin Handler
+06:09:00.247800 - Debug - Deleting server...
+06:09:00.248800 - Debug - 0 open connections
+06:09:00.249800 - Debug - Done
+06:09:00.260800 - Debug - Server engine returned: 0
+06:10:50.152800 - Info  - Server launched
+06:10:50.161800 - Info  - Created Plugin Handler
+06:10:50.162800 - Debug - Loading plugin 'ClassicPlugin'
+06:10:50.174800 - Debug - Loading Default map data
+06:10:50.175800 - Debug - Processing map...
+06:10:50.186800 - Debug - Blocks size: 262144, Zipped size: 2183
+06:10:50.187800 - Debug - 3 chunks
+06:10:50.188800 - Info  - Booted world 'Default'
+06:10:50.189800 - Debug - Imported player database.
+06:10:50.189800 - Debug - Added hooks
+06:10:50.190800 - ClassicPlugin - Loaded
+06:10:50.191800 - Info  - Loaded plugin 'ClassicPlugin'
+06:10:50.620800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:11:02.360800 - Debug - Got new connection
+06:11:02.360800 - Debug - Checking for player
+06:11:02.361800 - Debug - Is player
+06:11:02.361800 - Debug - 'Adam01' has returned
+06:11:02.368800 - Debug - Player(0, Adam01): Created instance
+06:11:02.369800 - Debug - Player(0, Adam01): Send map init
+06:11:02.371800 - Debug - Added player (0)
+06:11:02.426800 - Debug - Player(0, Adam01): Sent map chunk
+06:11:02.479800 - Debug - Player(0, Adam01): Sent map chunk
+06:11:02.559800 - Debug - Player(0, Adam01): Sent map chunk
+06:11:02.562800 - Debug - Player(0, Adam01): Sent map final
+06:11:02.562800 - Debug - Player(0, Adam01) joined World(Default)
+06:11:02.565800 - Debug - Player(0, Adam01) spawned in World(Default)
+06:11:02.566800 - Debug - Player(0, Adam01) spawned players in World(Default)
+06:11:50.608800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:12:05.240800 - Info  - Unloading plugins...
+06:12:05.240800 - Debug - Deleting players...
+06:12:05.247800 - Debug - Player(0, Adam01) unspawned from World(Default)
+06:12:05.248800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+06:12:05.249800 - Debug - Player(0, Adam01) left World(Default)
+06:12:05.251800 - Info  - Player(0, Adam01): Disconnected
+06:12:05.252800 - Debug - Done
+06:12:05.255800 - Debug - Saved player database.
+06:12:05.255800 - Debug - Shutting down worlds...
+06:12:05.256800 - Info  - Shutting down world 'Default'
+06:12:05.258800 - Debug - Done
+06:12:05.259800 - ClassicPlugin - Unloaded
+06:12:05.261800 - Info  - Unloaded plugin 'ClassicPlugin'
+06:12:05.262800 - Info  - Destroyed Plugin Handler
+06:12:05.263800 - Debug - Deleting server...
+06:12:05.264800 - Debug - 0 open connections
+06:12:05.265800 - Debug - Done
+06:12:05.266800 - Debug - Server engine returned: 0
+06:13:06.534800 - Info  - Server launched
+06:13:06.545800 - Info  - Created Plugin Handler
+06:13:06.545800 - Debug - Loading plugin 'ClassicPlugin'
+06:13:06.557800 - Debug - Loading Default map data
+06:13:06.558800 - Debug - Processing map...
+06:13:06.568800 - Debug - Blocks size: 262144, Zipped size: 2183
+06:13:06.569800 - Debug - 3 chunks
+06:13:06.569800 - Info  - Booted world 'Default'
+06:13:06.570800 - Debug - Imported player database.
+06:13:06.571800 - Debug - Added hooks
+06:13:06.571800 - ClassicPlugin - Loaded
+06:13:06.572800 - Info  - Loaded plugin 'ClassicPlugin'
+06:13:06.910800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:13:14.132800 - Debug - Got new connection
+06:13:14.132800 - Debug - Checking for player
+06:13:14.132800 - Debug - Is player
+06:13:14.133800 - Debug - 'Adam01' has returned
+06:13:14.140800 - Debug - Player(0, Adam01): Created instance
+06:13:14.142800 - Debug - Player(0, Adam01): Send map init
+06:13:14.143800 - Debug - Added player (0)
+06:13:14.199800 - Debug - Player(0, Adam01): Sent map chunk
+06:13:14.253800 - Debug - Player(0, Adam01): Sent map chunk
+06:13:14.316800 - Debug - Player(0, Adam01): Sent map chunk
+06:13:14.318800 - Debug - Player(0, Adam01): Sent map final
+06:13:14.319800 - Debug - Player(0, Adam01) joined World(Default)
+06:13:14.322800 - Debug - Player(0, Adam01) spawned in World(Default)
+06:13:14.324800 - Debug - Player(0, Adam01) spawned players in World(Default)
+06:13:33.893800 - Info  - Adam01: hi
+06:13:46.664800 - Info  - Adam01: merr
+06:13:55.986800 - Info  - Unloading plugins...
+06:13:55.987800 - Debug - Deleting players...
+06:13:55.993800 - Debug - Player(0, Adam01) unspawned from World(Default)
+06:13:55.994800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+06:13:55.996800 - Debug - Player(0, Adam01) left World(Default)
+06:13:55.997800 - Info  - Player(0, Adam01): Disconnected
+06:13:55.999800 - Debug - Done
+06:13:56.000800 - Debug - Saved player database.
+06:13:56.001800 - Debug - Shutting down worlds...
+06:13:56.002800 - Info  - Shutting down world 'Default'
+06:13:56.004800 - Debug - Done
+06:13:56.006800 - ClassicPlugin - Unloaded
+06:13:56.007800 - Info  - Unloaded plugin 'ClassicPlugin'
+06:13:56.008800 - Info  - Destroyed Plugin Handler
+06:13:56.010800 - Debug - Deleting server...
+06:13:56.010800 - Debug - 0 open connections
+06:13:56.012800 - Debug - Done
+06:13:56.012800 - Debug - Server engine returned: 0
+06:14:49.229800 - Info  - Server launched
+06:14:49.239800 - Info  - Created Plugin Handler
+06:14:49.242800 - Debug - Loading plugin 'ClassicPlugin'
+06:14:49.340800 - Debug - Loading Default map data
+06:14:49.341800 - Debug - Processing map...
+06:14:49.353800 - Debug - Blocks size: 262144, Zipped size: 2183
+06:14:49.354800 - Debug - 3 chunks
+06:14:49.355800 - Info  - Booted world 'Default'
+06:14:49.355800 - Debug - Imported player database.
+06:14:49.356800 - Debug - Added hooks
+06:14:49.356800 - ClassicPlugin - Loaded
+06:14:49.357800 - Info  - Loaded plugin 'ClassicPlugin'
+06:14:49.916800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:15:12.133800 - Debug - Got new connection
+06:15:12.133800 - Debug - Checking for player
+06:15:12.133800 - Debug - Is player
+06:15:12.134800 - Debug - 'Adam01' has returned
+06:15:12.137800 - Debug - Player(0, Adam01): Created instance
+06:15:12.138800 - Debug - Player(0, Adam01): Send map init
+06:15:12.138800 - Debug - Added player (0)
+06:15:12.192800 - Debug - Player(0, Adam01): Sent map chunk
+06:15:12.248800 - Debug - Player(0, Adam01): Sent map chunk
+06:15:12.333800 - Debug - Player(0, Adam01): Sent map chunk
+06:15:12.335800 - Debug - Player(0, Adam01): Sent map final
+06:15:12.336800 - Debug - Player(0, Adam01) joined World(Default)
+06:15:12.339800 - Debug - Player(0, Adam01) spawned in World(Default)
+06:15:12.340800 - Debug - Player(0, Adam01) spawned players in World(Default)
+06:15:16.601800 - Info  - Adam01: hi
+06:15:20.713800 - Info  - Adam01: mhmm
+06:15:49.769800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:16:00.445800 - Info  - Unloading plugins...
+06:16:00.445800 - Debug - Deleting players...
+06:16:00.450800 - Debug - Player(0, Adam01) unspawned players from World(Default)
+06:16:00.451800 - Debug - Player(0, Adam01) left World(Default)
+06:16:00.453800 - Info  - Player(0, Adam01): Disconnected
+06:16:00.454800 - Debug - Done
+06:16:00.456800 - Debug - Saved player database.
+06:16:00.457800 - Debug - Shutting down worlds...
+06:16:00.457800 - Info  - Shutting down world 'Default'
+06:16:00.460800 - Debug - Done
+06:16:00.460800 - ClassicPlugin - Unloaded
+06:16:00.461800 - Info  - Unloaded plugin 'ClassicPlugin'
+06:16:00.463800 - Info  - Destroyed Plugin Handler
+06:16:00.464800 - Debug - Deleting server...
+06:16:00.465800 - Debug - 0 open connections
+06:16:00.466800 - Debug - Done
+06:16:00.467800 - Debug - Server engine returned: 0
+06:16:08.327800 - Info  - Restarting server on user request
+06:16:08.336800 - Info  - Created Plugin Handler
+06:16:08.337800 - Debug - Loading plugin 'ClassicPlugin'
+06:16:08.351800 - Debug - Loading Default map data
+06:16:08.352800 - Debug - Processing map...
+06:16:08.363800 - Debug - Blocks size: 262144, Zipped size: 2183
+06:16:08.364800 - Debug - 3 chunks
+06:16:08.366800 - Info  - Booted world 'Default'
+06:16:08.367800 - Debug - Imported player database.
+06:16:08.368800 - Debug - Added hooks
+06:16:08.368800 - ClassicPlugin - Loaded
+06:16:08.369800 - Info  - Loaded plugin 'ClassicPlugin'
+06:16:08.652800 - Info  - http://www.minecraft.net/classic/play/72e79fa2c9516586d52a678e1bc1fbab
+06:16:13.477800 - Info  - Unloading plugins...
+06:16:13.477800 - Debug - Deleting players...
+06:16:13.478800 - Debug - Done
+06:16:13.479800 - Debug - Saved player database.
+06:16:13.479800 - Debug - Shutting down worlds...
+06:16:13.480800 - Info  - Shutting down world 'Default'
+06:16:13.480800 - Debug - Done
+06:16:13.483800 - ClassicPlugin - Unloaded
+06:16:13.484800 - Info  - Unloaded plugin 'ClassicPlugin'
+06:16:13.485800 - Info  - Destroyed Plugin Handler
+06:16:13.486800 - Debug - Deleting server...
+06:16:13.487800 - Debug - 0 open connections
+06:16:13.488800 - Debug - Done
+06:16:13.490800 - Debug - Server engine returned: 0
+21:43:01.495000 - Info  - Server launched
+21:43:01.504000 - Info  - Created Plugin Handler
+21:43:01.505000 - Debug - Loading plugin 'ClassicPlugin'
+21:43:01.761000 - Debug - Loading Default map data
+21:43:01.762000 - Debug - Processing map...
+21:43:01.772000 - Debug - Blocks size: 262144, Zipped size: 2183
+21:43:01.773000 - Debug - 3 chunks
+21:43:01.774000 - Info  - Booted world 'Default'
+21:43:01.783000 - Debug - Imported player database.
+21:43:01.784000 - Debug - Added hooks
+21:43:01.784000 - ClassicPlugin - Loaded
+21:43:01.793000 - Info  - Loaded plugin 'ClassicPlugin'
+21:43:02.508000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:44:02.103000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:45:02.246000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:46:02.138000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:47:02.130000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:47:36.351000 - Debug - Got new connection
+21:47:36.351000 - Debug - Checking for player
+21:47:36.352000 - Debug - Is player
+21:47:36.353000 - Debug - 'Adam01' has returned
+21:47:36.361000 - Debug - Player(0, Adam01): Created instance
+21:47:36.364000 - Debug - Player(0, Adam01): Send map init
+21:47:36.365000 - Debug - Added player (0)
+21:47:36.425000 - Debug - Player(0, Adam01): Sent map chunk
+21:47:36.478000 - Debug - Player(0, Adam01): Sent map chunk
+21:47:36.534000 - Debug - Player(0, Adam01): Sent map chunk
+21:47:36.537000 - Debug - Player(0, Adam01): Sent map final
+21:47:36.538000 - Debug - Player(0, Adam01) joined World(Default)
+21:47:36.542000 - Debug - Player(0, Adam01) spawned in World(Default)
+21:47:36.543000 - Debug - Player(0, Adam01) spawned players in World(Default)
+21:48:02.157000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:48:19.160000 - Info  - Adam01: test
+21:49:02.159000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:49:16.072000 - Debug - Got new connection
+21:49:16.073000 - Debug - Checking for player
+21:49:16.073000 - Debug - Is player
+21:49:16.073000 - Debug - 'Adam01' has returned
+21:49:16.076000 - Debug - Player(1, Adam01): Created instance
+21:49:16.077000 - Debug - Player(1, Adam01): Send map init
+21:49:16.078000 - Debug - Added player (1)
+21:49:16.132000 - Debug - Player(1, Adam01): Sent map chunk
+21:49:16.193000 - Debug - Player(1, Adam01): Sent map chunk
+21:49:16.309000 - Debug - Player(1, Adam01): Sent map chunk
+21:49:16.311000 - Debug - Player(1, Adam01): Sent map final
+21:49:16.312000 - Debug - Player(1, Adam01) joined World(Default)
+21:49:16.324000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:16.324000 - Debug - Player(1, Adam01) spawned in World(Default)
+21:49:16.325000 - Debug - Player(1, Adam01) spawned players in World(Default)
+21:49:16.831000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:16.883000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:16.949000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:17 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:17.051000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:31.113000 - Debug - Got new connection
+21:49:31.114000 - Debug - Checking for player
+21:49:31.116000 - Debug - Is player
+21:49:31.117000 - Debug - 'Adam01' has returned
+21:49:31.133000 - Debug - Player(2, Adam01): Created instance
+21:49:31.134000 - Debug - Player(2, Adam01): Send map init
+21:49:31.137000 - Debug - Added player (2)
+21:49:31.200000 - Debug - Player(2, Adam01): Sent map chunk
+21:49:31.270000 - Debug - Player(2, Adam01): Sent map chunk
+21:49:31.345000 - Debug - Player(2, Adam01): Sent map chunk
+21:49:31.348000 - Debug - Player(2, Adam01): Sent map final
+21:49:31.349000 - Debug - Player(2, Adam01) joined World(Default)
+21:49:31.353000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:31.353000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:31.354000 - Debug - Player(2, Adam01) spawned in World(Default)
+21:49:31.355000 - Debug - Player(2, Adam01) spawned players in World(Default)
+21:49:31.856000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:31.857000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:31.908000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:31.909000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:31.959000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:31.960000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:32.010000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:32.011000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:32.062000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:32.063000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:41.847000 - Debug - Got new connection
+21:49:41.848000 - Debug - Checking for player
+21:49:41.848000 - Debug - Is player
+21:49:41.849000 - Debug - 'Adam01' has returned
+21:49:41.852000 - Debug - Player(3, Adam01): Created instance
+21:49:41.854000 - Debug - Player(3, Adam01): Send map init
+21:49:41.854000 - Debug - Added player (3)
+21:49:41.908000 - Debug - Player(3, Adam01): Sent map chunk
+21:49:41.962000 - Debug - Player(3, Adam01): Sent map chunk
+21:49:42.032000 - Debug - Player(3, Adam01): Sent map chunk
+21:49:42.035000 - Debug - Player(3, Adam01): Sent map final
+21:49:42.035000 - Debug - Player(3, Adam01) joined World(Default)
+21:49:42.039000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.040000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.041000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:49:42.041000 - Debug - Player(3, Adam01) spawned in World(Default)
+21:49:42.042000 - Debug - Player(3, Adam01) spawned players in World(Default)
+21:49:42.502000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.503000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.504000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:49:42.555000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.556000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.557000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:49:42.607000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.608000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.609000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:49:42.660000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.661000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.661000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:49:42.712000 - Error - Player(0, Adam01): Caught boost exception in player send
+21:49:42.713000 - Error - Player(1, Adam01): Caught boost exception in player send
+21:49:42.714000 - Error - Player(2, Adam01): Caught boost exception in player send
+21:50:02.183000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:51:02.131000 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:52:02.137200 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+21:52:07.129200 - Info  - Unloading plugins...
+21:52:07.129200 - Debug - Deleting players...
+21:52:07.129200 - Debug - 11:59:01.755400 - Info  - Server launched
+11:59:01.780400 - Info  - Created Plugin Handler
+11:59:01.780400 - Debug - Loading plugin 'ClassicPlugin'
+11:59:02.668400 - Debug - Loading Default map data
+11:59:02.668400 - Debug - Processing map...
+11:59:02.680400 - Debug - Blocks size: 262144, Zipped size: 2183
+11:59:02.680400 - Debug - 3 chunks
+11:59:02.680400 - Info  - Booted world 'Default'
+11:59:02.681400 - Debug - Imported player database.
+11:59:02.681400 - Debug - Added hooks
+11:59:02.681400 - ClassicPlugin - 12:00:44.058400 - Info  - Server launched
+12:00:44.078400 - Info  - Created Plugin Handler
+12:00:44.079400 - Debug - Loading plugin 'ClassicPlugin'
+12:00:44.807400 - Debug - Loading Default map data
+12:00:44.808400 - Debug - Processing map...
+12:00:44.819400 - Debug - Blocks size: 262144, Zipped size: 2183
+12:00:44.820400 - Debug - 3 chunks
+12:00:44.821400 - Info  - Booted world 'Default'
+12:00:44.822400 - Debug - Imported player database.
+12:00:44.823400 - Debug - Added hooks
+12:00:44.823400 - ClassicPlugin - Loaded
+12:00:44.824400 - Info  - Loaded plugin 'ClassicPlugin'
+12:00:45.296400 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+12:01:40.337400 - Debug - Got new connection
+12:01:40.337400 - Debug - Checking for player
+12:01:40.338400 - Debug - Is player
+12:01:40.338400 - Debug - 'Adam01' has returned
+12:01:40.354400 - Debug - Player(0, Adam01): Created instance
+12:01:40.355400 - Debug - Player(0, Adam01): Send map init
+12:01:40.356400 - Debug - Added player (0)
+12:01:40.457400 - Debug - Player(0, Adam01): Sent map chunk
+12:01:40.556400 - Debug - Player(0, Adam01): Sent map chunk
+12:01:40.610400 - Debug - Player(0, Adam01): Sent map chunk
+12:01:40.613400 - Debug - Player(0, Adam01): Sent map final
+12:01:40.614400 - Debug - Player(0, Adam01) joined World(Default)
+12:01:40.619400 - Debug - Player(0, Adam01) spawned in World(Default)
+12:01:40.619400 - Debug - Player(0, Adam01) spawned players in World(Default)
+12:01:45.249400 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+12:02:01.078400 - Debug - Got new connection
+12:02:01.269400 - Debug - Checking for player
+12:02:01.270400 - Debug - Is player
+12:02:01.273400 - Debug - 'Adam01' has returned
+12:02:01.283400 - Debug - Player(1, Adam01): Created instance
+12:02:01.287400 - Debug - Player(1, Adam01): Send map init
+12:02:01.291400 - Debug - Added player (1)
+12:02:01.542400 - Debug - Player(1, Adam01): Sent map chunk
+12:02:01.640400 - Debug - Player(1, Adam01): Sent map chunk
+12:02:01.697400 - Debug - Player(1, Adam01): Sent map chunk
+12:02:01.700400 - Debug - Player(1, Adam01): Sent map final
+12:02:01.703400 - Debug - Player(1, Adam01) joined World(Default)
+12:02:01.716400 - Debug - Player(1, Adam01) spawned in World(Default)
+12:02:01.717400 - Debug - Player(1, Adam01) spawned players in World(Default)
+12:02:45.247400 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+12:03:45.328400 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+12:04:29.295400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.649400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.700400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.755400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.806400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.857400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.908400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:29.963400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.014400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.065400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.116400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.167400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.218400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.273400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.326400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.379400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.430400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.481400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.532400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.583400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.639400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.690400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.748400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.799400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.857400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.908400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:30.960400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.011400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.062400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.113400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.164400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.220400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.271400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.322400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.373400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.424400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.477400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.528400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.579400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.631400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.682400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.734400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.787400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.841400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.895400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:31.950400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.001400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.052400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.104400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.155400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.206400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.257400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.308400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.359400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.411400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.462400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.515400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.567400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.618400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.669400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.720400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.771400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.822400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.873400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.932400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:32.983400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.042400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.093400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.151400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.207400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.260400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.311400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.364400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.415400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.466400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.517400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.568400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.619400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.670400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.723400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.775400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:33.878400 - Error - Player(1, Adam01): Caught boost exception in player send
+12:04:44.132400 - Error - Player(1, Adam01): Caught boost exception in player send16:46:44.185900 - Info  - Server launched
+16:46:44.203900 - Info  - Created Plugin Handler
+16:46:44.204900 - Debug - Loading plugin 'ClassicPlugin'
+16:46:44.406900 - Debug - Loading Default map data
+16:46:44.406900 - Debug - Processing map...
+16:46:44.417900 - Debug - Blocks size: 262144, Zipped size: 2183
+16:46:44.418900 - Debug - 3 chunks
+16:46:44.418900 - Info  - Booted world 'Default'
+16:46:44.419900 - Debug - Imported player database.
+16:46:44.420900 - Debug - Added hooks
+16:46:44.420900 - ClassicPlugin - Loaded
+16:46:44.459900 - Info  - Loaded plugin 'ClassicPlugin'
+16:46:44.826900 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+18:37:06.688900 - Info  - Server launched
+18:37:06.698900 - Info  - Created Plugin Handler
+18:37:06.698900 - Debug - Loading plugin 'ClassicPlugin'
+18:37:07.471900 - Debug - Loading Default map data
+18:37:07.472900 - Debug - Processing map...
+18:37:07.482900 - Debug - Blocks size: 262144, Zipped size: 2183
+18:37:07.483900 - Debug - 3 chunks
+18:37:07.484900 - Info  - Booted world 'Default'
+18:37:07.485900 - Debug - Imported player database.
+18:37:07.485900 - Debug - Added hooks
+18:37:07.486900 - ClassicPlugin - Loaded
+18:37:07.503900 - Info  - Loaded plugin 'ClassicPlugin'
+18:37:07.986900 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+18:37:14.559900 - Info  - Unloading plugins...
+18:37:14.559900 - Debug - Deleting players...
+18:37:14.560900 - Debug - Done
+18:37:14.560900 - Debug - Saved player database.
+18:37:14.561900 - Debug - Shutting down worlds...
+18:37:14.562900 - Info  - Shutting down world 'Default'
+18:37:14.565900 - Debug - Done
+18:37:14.566900 - ClassicPlugin - Unloaded
+18:37:14.567900 - Info  - Unloaded plugin 'ClassicPlugin'
+18:37:14.568900 - Info  - Destroyed Plugin Handler
+18:37:14.569900 - Debug - Deleting server...
+18:37:14.570900 - Debug - 0 open connections
+18:37:14.571900 - Debug - Done
+18:37:14.572900 - Debug - Server engine returned: 0
+19:21:20.907900 - Info  - Server launched
+19:21:20.915900 - Info  - Created Plugin Handler
+19:21:20.916900 - Debug - Loading plugin 'ClassicPlugin'
+19:21:21.109900 - Debug - Loading Default map data
+19:21:21.110900 - Debug - Processing map...
+19:21:21.119900 - Debug - Blocks size: 262144, Zipped size: 2183
+19:21:21.120900 - Debug - 3 chunks
+19:21:21.120900 - Info  - Booted world 'Default'
+19:21:21.122900 - Debug - Imported player database.
+19:21:21.122900 - Debug - Added hooks
+19:21:21.122900 - ClassicPlugin - Loaded
+19:21:21.123900 - Info  - Loaded plugin 'ClassicPlugin'
+19:21:21.469900 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+19:22:21.466900 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+19:22:39.948900 - Debug - Got new connection
+19:22:39.948900 - Debug - Checking for player
+19:22:39.949900 - Debug - Is player
+19:22:39.949900 - Debug - 'Adam01' has returned
+19:22:39.962900 - Debug - Player(0, Adam01): Created instance
+19:22:39.966900 - Debug - Player(0, Adam01): Send map init
+19:22:39.968900 - Debug - Added player (0)
+19:22:40.024900 - Debug - Player(0, Adam01): Sent map chunk
+19:22:40.078900 - Debug - Player(0, Adam01): Sent map chunk
+19:22:40.132900 - Debug - Player(0, Adam01): Sent map chunk
+19:22:40.135900 - Debug - Player(0, Adam01): Sent map final
+19:22:40.136900 - Debug - Player(0, Adam01) joined World(Default)
+19:22:40.139900 - Debug - Player(0, Adam01) spawned in World(Default)
+19:22:40.140900 - Debug - Player(0, Adam01) spawned players in World(Default)
+19:22:57.711900 - Debug - Got new connection
+19:22:57.712900 - Debug - Checking for player
+19:22:57.715900 - Debug - Is player
+19:22:57.716900 - Debug - 'Adam01' has returned
+19:22:57.725900 - Debug - Player(1, Adam01): Created instance
+19:22:57.728900 - Debug - Player(1, Adam01): Send map init
+19:22:57.730900 - Debug - Added player (1)
+19:22:57.784900 - Debug - Player(1, Adam01): Sent map chunk
+19:22:57.838900 - Debug - Player(1, Adam01): Sent map chunk
+19:22:57.994900 - Debug - Player(1, Adam01): Sent map chunk
+19:22:57.997900 - Debug - Player(1, Adam01): Sent map final
+19:22:57.998900 - Debug - Player(1, Adam01) joined World(Default)
+19:22:58.006900 - Debug - Player(1, Adam01) spawned in World(Default)
+19:22:58.007900 - Debug - Player(1, Adam01) spawned players in World(Default)
+19:23:21.594900 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+19:23:37.609900 - Info  - Unloading plugins...
+19:23:37.609900 - Debug - Deleting players...
+19:23:37.611900 - Debug - Player(0, Adam01) unspawned players from World(Default)
+19:23:37.612900 - Debug - Player(0, Adam01) left World(Default)
+19:23:37.614900 - Info  - Player(0, Adam01): Disconnected
+19:23:37.616900 - Debug - Player(1, Adam01) unspawned players from World(Default)
+19:23:37.616900 - Debug - Player(1, Adam01) left World(Default)
+19:23:37.617900 - Info  - Player(1, Adam01): Disconnected
+19:23:37.618900 - Debug - Done
+19:23:37.619900 - Debug - Saved player database.
+19:23:37.620900 - Debug - Shutting down worlds...
+19:23:37.621900 - Info  - Shutting down world 'Default'
+19:23:37.622900 - Debug - Done
+19:23:37.624900 - ClassicPlugin - Unloaded
+19:23:37.624900 - Info  - Unloaded plugin 'ClassicPlugin'
+19:23:37.625900 - Info  - Destroyed Plugin Handler
+19:23:37.625900 - Debug - Deleting server...
+19:23:37.625900 - Debug - 0 open connections
+19:23:37.626900 - Debug - Done
+19:23:37.626900 - Debug - Server engine returned: 0

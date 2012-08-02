@@ -101,9 +101,10 @@ bool Player::step()
     return true;
 }
 
-void Player::onData(char d)
+void Player::onData(std::shared_ptr<char> d, const boost::system::error_code& ec, std::size_t bt)
 {
-        switch(d)
+    if(ec or bt == 0) disconnect();
+        switch(*d)
         {
         case Client_Packets::Movement:
         {

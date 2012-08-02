@@ -55,22 +55,22 @@ namespace Client_Packets
     enum: uint8_t { Info, Blockchange = 5, Movement = 8, Chat = 13 };
 
     // Client/Server information
-    struct Packet_Info : _Packet<0,uint8_t,std::string,std::string,char>::Packet<64,64>{
+    struct Packet_Info : Packet<0,uint8_t,std::string,std::string,char>::StaticLength<64,64>{
         enum:uint8_t{version,name,motd,op};
     };
 
     // Client->Server blockchange
-    struct Packet_Blockchange : _Packet<5,uint16_t,uint16_t,uint16_t,bool,uint8_t>::Packet<>{
+    struct Packet_Blockchange : Packet<5,uint16_t,uint16_t,uint16_t,bool,uint8_t>::StaticLength<>{
         enum:uint8_t{x,y,z,mode,block};
     };
 
     // Client->Server movement
-    struct Packet_Movement : _Packet<8,uint8_t,int16_t,int16_t,int16_t,int8_t, int8_t>::Packet<> {
+    struct Packet_Movement : Packet<8,uint8_t,int16_t,int16_t,int16_t,int8_t, int8_t>::StaticLength<> {
         enum:uint8_t{pid,x,y,z,h,p};
     };
 
     // Client->Server chat
-    struct Packet_Chat : _Packet<13,char,std::string>::Packet<64>{
+    struct Packet_Chat : Packet<13,char,std::string>::StaticLength<64>{
         enum:uint8_t{pid,msg};
     };
 }
@@ -79,44 +79,44 @@ namespace Server_Packets
 {
     using Client_Packets::Packet_Info;
 
-    typedef _Packet<1>::Packet<> Packet_Ping;
+    typedef Packet<1>::StaticLength<> Packet_Ping;
 
-    typedef _Packet<2>::Packet<> Packet_Level_Init;
+    typedef Packet<2>::StaticLength<> Packet_Level_Init;
 
-    struct Packet_Level_Chunk : _Packet<3,uint16_t,std::string,unsigned char>::Packet<1024>{
+    struct Packet_Level_Chunk : Packet<3,uint16_t,std::string,unsigned char>::StaticLength<1024>{
         enum:uint8_t{size,mapdata,progress};
     };
-    struct Packet_Level_Final :_Packet<4,uint16_t,uint16_t,uint16_t>::Packet<>{
+    struct Packet_Level_Final :Packet<4,uint16_t,uint16_t,uint16_t>::StaticLength<>{
         enum:uint8_t{x,y,z};
     };
-    struct Packet_SetBlock : _Packet<6,uint16_t,uint16_t,uint16_t,unsigned char>::Packet<>{
+    struct Packet_SetBlock : Packet<6,uint16_t,uint16_t,uint16_t,unsigned char>::StaticLength<>{
         enum:uint8_t{x,y,z,block};
     };
-    struct Packet_Spawn : _Packet<7,uint8_t,std::string,int16_t,int16_t,int16_t,int8_t, int8_t>::Packet<64>{
+    struct Packet_Spawn : Packet<7,uint8_t,std::string,int16_t,int16_t,int16_t,int8_t, int8_t>::StaticLength<64>{
         enum:uint8_t{pid,name,x,y,z,h,p};
     };
 
     typedef Client_Packets::Packet_Movement Packet_Teleport;
 
-    struct Packet_Movement : _Packet<9,char,char,char,char,char,char>::Packet<> {
+    struct Packet_Movement : Packet<9,char,char,char,char,char,char>::StaticLength<> {
         enum:uint8_t{pid,x,y,z,h,p};
     };
-    struct Packet_Position : _Packet<10,char,char,char,char>::Packet<> {
+    struct Packet_Position : Packet<10,char,char,char,char>::StaticLength<> {
         enum:uint8_t{pid,x,y,z};
     };
-    struct Packet_Orientation : _Packet<11,char,char,char>::Packet<> {
+    struct Packet_Orientation : Packet<11,char,char,char>::StaticLength<> {
         enum:uint8_t{pid,h,p};
     };
-    struct Packet_Unspawn : _Packet<12,char>::Packet<> {
+    struct Packet_Unspawn : Packet<12,char>::StaticLength<> {
         enum:uint8_t{pid};
     };
 
     using Client_Packets::Packet_Chat;
 
-    struct Packet_Disconnect : _Packet<14,std::string>::Packet<64>{
+    struct Packet_Disconnect : Packet<14,std::string>::StaticLength<64>{
         enum:uint8_t{msg};
     };
-    struct Packet_OP : _Packet<15,char>::Packet<> {
+    struct Packet_OP : Packet<15,char>::StaticLength<> {
         enum:uint8_t{type};
     };
 }

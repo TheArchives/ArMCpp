@@ -194,3 +194,198 @@
 	"Worlds.hpp"
 	<boost/algorithm/string/trim.hpp>
 
+1325315519 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\players.cpp
+	"Players.hpp"
+	"Server.hpp"
+	<boost/algorithm/string/trim.hpp>
+
+1325212847 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\players.hpp
+	<string>
+	<iostream>
+	<list>
+	<memory>
+	<bitset>
+	"Player.hpp"
+	"PlayerDB.hpp"
+	<boost/asio.hpp>
+	<boost/lexical_cast.hpp>
+
+1343931201 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\player.hpp
+	"Aftershock.hpp"
+	"ClassicProtocol.hpp"
+	"PlayerDB.hpp"
+	"taskScheduler.hpp"
+	"World.hpp"
+	<string>
+	<iostream>
+	<boost/make_shared.hpp>
+	<boost/asio.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/enable_shared_from_this.hpp>
+
+1325209087 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\aftershock.hpp
+	<boost/system/error_code.hpp>
+	<boost/thread.hpp>
+	<typeinfo>
+	<string>
+	<exception>
+	<array>
+
+1343930337 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\classicprotocol.hpp
+	"Packets.hpp"
+
+1343929505 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\packets.hpp
+	<tuple>
+	<string>
+	<ostream>
+	<initializer_list>
+	<boost/asio.hpp>
+
+1314305720 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\playerdb.hpp
+	"Logging.hpp"
+	<string>
+	<fstream>
+	<CSVDB/DataBase.hpp>
+
+1314133785 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\logging.hpp
+	<string>
+	<fstream>
+	<sstream>
+	<boost/thread/mutex.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/format.hpp>
+
+1310995536 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\csvdb\database.hpp
+	"Detail/DB_Base.hpp"
+	"Detail/DB_Row.hpp"
+	"Detail/DB_Index.hpp"
+
+1310995577 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\csvdb\detail\db_base.hpp
+	<list>
+	<exception>
+	<cstddef>
+	<ostream>
+	<istream>
+	<tuple>
+	<typeinfo>
+
+1310995589 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\csvdb\detail\db_row.hpp
+	"DB_Base.hpp"
+	<string>
+	<tuple>
+	<boost/algorithm/string/replace.hpp>
+
+1310995585 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\csvdb\detail\db_index.hpp
+	"DB_Base.hpp"
+	"DB_Row.hpp"
+	<map>
+
+1325189407 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\taskscheduler.hpp
+	<queue>
+	<functional>
+	<memory>
+	<csignal>
+	<atomic>
+	<boost/date_time.hpp>
+	<boost/enable_shared_from_this.hpp>
+	<boost/thread.hpp>
+	"Logging.hpp"
+
+1325182761 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\world.hpp
+	"Aftershock.hpp"
+	"taskScheduler.hpp"
+	"ClassicProtocol.hpp"
+	"eventChain.hpp"
+	"Player.hpp"
+	<cstdio>
+	<iostream>
+	<list>
+	<set>
+	<queue>
+	<string>
+	<vector>
+	<atomic>
+	<boost/thread.hpp>
+	<boost/thread/mutex.hpp>
+	<libNBT/NBTLib.hpp>
+
+1316632665 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\eventchain.hpp
+	<list>
+	<boost/signal.hpp>
+	<boost/type_traits.hpp>
+	"Events.hpp"
+
+1325213851 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\events.hpp
+	<boost/logic/tribool.hpp>
+	<boost/asio.hpp>
+	<list>
+
+1310995622 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\libnbt\nbtlib.hpp
+	<string>
+	<iostream>
+	<map>
+	<list>
+	<stdexcept>
+	<memory>
+	<type_traits>
+	<typeinfo>
+
+1325208387 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\server.hpp
+	<string>
+	<set>
+	<boost/asio.hpp>
+	"Aftershock.hpp"
+	"eventChain.hpp"
+
+1325203810 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\world.cpp
+	"World.hpp"
+	<boost/iostreams/filtering_stream.hpp>
+	<boost/iostreams/device/array.hpp>
+	<boost/iostreams/filter/gzip.hpp>
+	<zlib/zlib.h>
+
+1271722368 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\zlib\zlib.h
+	"zconf.h"
+
+1271599086 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\zlib\zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1313175500 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\worlds.cpp
+	"Worlds.hpp"
+
+1325210576 c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\worlds.hpp
+	<string>
+	<ctime>
+	<list>
+	"World.hpp"
+
+1325271787 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\main.cpp
+	"Logging.hpp"
+	"Plugin.hpp"
+	"version.h"
+	"Server.hpp"
+	"Players.hpp"
+	"Worlds.hpp"
+	<iostream>
+
+1316520971 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\plugin.hpp
+	<string>
+	<list>
+	<memory>
+	"Aftershock.hpp"
+
+1316631419 c:\users\adam\projects\arcmp++\armcpp\aftershock\\version.h
+
+1314134080 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\playerdb.cpp
+	"PlayerDB.hpp"
+
+1343931215 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\classicplugin\player.cpp
+	"Player.hpp"
+	"Server.hpp"
+	"Players.hpp"
+	"Worlds.hpp"
+	<boost/algorithm/string/trim.hpp>
+

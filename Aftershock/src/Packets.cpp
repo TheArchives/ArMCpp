@@ -84,25 +84,79 @@ int64_t& swap<int64_t>(int64_t& value)
 namespace Packet_Helpers
 {
 
-template<>
-void sendData::operator()<std::string>(const std::string& a)
-{
-    assert(it!=itend);
-    std::string b(a);
-    b.resize(*it++);
-    s.send(boost::asio::buffer((char*)b.data(),b.length()));
-    std::cout << "Sent string: (" << b.length() << ")" << b << std::endl;
+template<class t>
+void sendStaticLengthString(const t& str, size_t size, boost::asio::ip::tcp::socket& sock){
+    t b(str);
+    b.resize(size);
+    sock.send(boost::asio::buffer((char*)b.data(),b.length()));
+    std::cout << "Sent string: (" << b.length() << ")" << b.c_str() << std::endl;
     //for(unsigned i =0; i<b.size(); ++i) std::cout << (int)b[i] << " ";
     //std::cout << std::endl;
 }
 
+template<class t>
+void recvStaticLengthString(t str, size_t size, boost::asio::ip::tcp::socket& sock){
+    str.resize(size);
+    sock.receive(boost::asio::buffer((char*)str.data(),str.length()));
+    //std::cout << "Recieved string: " << a << std::endl;
+}
+
 template<>
-void recvData::operator()<std::string>(std::string& a)
+void sendStaticLengthData::operator()<std::string>(const std::string& a)
 {
     assert(it!=itend);
-    a.resize(*it++);
-    s.receive(boost::asio::buffer((char*)a.data(),a.length()));
-    //std::cout << "Recieved string: " << a << std::endl;
+    sendStaticLengthString<std::string>(a,*it++,s);
+}
+
+template<>
+void recvStaticLengthData::operator()<std::string>(std::string& a)
+{
+    assert(it!=itend);
+    recvStaticLengthString<std::string>(a,*it++,s);
+}
+template<>
+void sendStaticLengthData::operator()<std::wstring>(const std::wstring& a)
+{
+    assert(it!=itend);
+    sendStaticLengthString<std::wstring>(a,*it++,s);
+}
+
+template<>
+void recvStaticLengthData::operator()<std::wstring>(std::wstring& a)
+{
+    assert(it!=itend);
+    recvStaticLengthString<std::wstring>(a,*it++,s);
+}
+
+
+template<>
+void sendDynamicLengthData::operator()<std::string>(const std::string& a)
+{
+    (*this)((short)a.length());
+    sendStaticLengthString<std::string>(a,a.length(),s);
+}
+
+template<>
+void recvDynamicLengthData::operator()<std::string>(std::string& a)
+{
+    short l;
+    (*this)(l);
+    recvStaticLengthString<std::string>(a,l,s);
+}
+
+template<>
+void sendDynamicLengthData::operator()<std::wstring>(const std::wstring& a)
+{
+    (*this)((short)a.length());
+    sendStaticLengthString<std::wstring>(a,a.length(),s);
+}
+
+template<>
+void recvDynamicLengthData::operator()<std::wstring>(std::wstring& a)
+{
+    short l;
+    (*this)(l);
+    recvStaticLengthString<std::wstring>(a,l,s);
 }
 
 }
