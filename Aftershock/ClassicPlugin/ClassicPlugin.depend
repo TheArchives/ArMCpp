@@ -100,7 +100,7 @@
 	<boost/asio.hpp>
 	<boost/lexical_cast.hpp>
 
-1343733291 c:\users\adam\projects\aftershock\code\classicplugin\player.hpp
+1343940078 c:\users\adam\projects\aftershock\code\classicplugin\player.hpp
 	"Aftershock.hpp"
 	"ClassicProtocol.hpp"
 	"PlayerDB.hpp"
@@ -112,11 +112,12 @@
 	<boost/asio.hpp>
 	<boost/lexical_cast.hpp>
 	<boost/enable_shared_from_this.hpp>
+	<boost/logic/tribool.hpp>
 
-1314302816 c:\users\adam\projects\aftershock\code\classicplugin\classicprotocol.hpp
+1343930337 c:\users\adam\projects\aftershock\code\classicplugin\classicprotocol.hpp
 	"Packets.hpp"
 
-1324823178 c:\users\adam\projects\aftershock\code\include\packets.hpp
+1343929505 c:\users\adam\projects\aftershock\code\include\packets.hpp
 	<tuple>
 	<string>
 	<ostream>
@@ -187,7 +188,7 @@
 	<list>
 	"World.hpp"
 
-1325311674 source:c:\users\adam\projects\aftershock\code\classicplugin\player.cpp
+1343940233 source:c:\users\adam\projects\aftershock\code\classicplugin\player.cpp
 	"Player.hpp"
 	"Server.hpp"
 	"Players.hpp"

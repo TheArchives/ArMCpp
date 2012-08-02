@@ -45,6 +45,7 @@ struct plr_disconnect;
 #include <boost/asio.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/enable_shared_from_this.hpp>
+#include <boost/logic/tribool.hpp>
 
 // Precise player location
 struct PlayerCoordinates {
@@ -79,7 +80,7 @@ public:
 class Player
 {
     std::shared_ptr<boost::asio::ip::tcp::socket> sock;
-    bool disconnected;
+    boost::logic::tribool disconnected;
 
     // World info
     World* currentWorld;
@@ -140,15 +141,19 @@ public:
 
 
     void sendPacket(const Packet_Base& p){
-        if(disconnected) {
+        if(disconnected == true) {
             this->error("Tried to send data to disconnected player");
             return;
+        }
+        else if(boost::logic::indeterminate(disconnected)){
+            return; // Socket has failed in last recv/send
         }
         try {
             p.send(*sock);
         }
         catch(const boost::exception&){
             this->error("Caught boost exception in player send");
+            disconnected = boost::logic::indeterminate;
             disconnect(); // Wait for next step
         }
     }

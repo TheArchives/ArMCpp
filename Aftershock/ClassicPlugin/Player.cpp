@@ -48,8 +48,6 @@ Player::~Player(){
 
 void Player::registerDataHandler()
 {
-    return;
-
     std::shared_ptr<char> d = std::make_shared<char>(0);
     sock->async_receive(boost::asio::buffer(d.get(),1),
                         boost::bind(&Player::onData,
@@ -62,7 +60,6 @@ void Player::registerDataHandler()
 
 
 void Player::leaveCurrentWorld(){
-    assert(currentWorld);
     if(!currentWorld) {
         this->error("Unable to leave a null world");
         return;
@@ -70,17 +67,19 @@ void Player::leaveCurrentWorld(){
     if(isVisible) currentWorld->unSpawnPlayer(*this);
     currentWorld->unSpawnPlayers(*this);
     currentWorld->removePlayer(*this);
+    currentWorld = nullptr;
 }
 
 void Player::disconnect()
 {
+    if(disconnected == true) return;
     if(sendMapTask->active()) sendMapTask->cancel();
     leaveCurrentWorld();
     sock->cancel(); // Cancel async operations
     sock->shutdown(boost::asio::ip::tcp::socket::shutdown_both); // Stop sending and receiving
     sock->close(); // Close the connection
-    disconnected = true;
     this->info("Disconnected");
+    disconnected = true;
 }
 
 bool Player::step()
@@ -103,70 +102,75 @@ bool Player::step()
 
 void Player::onData(std::shared_ptr<char> d, const boost::system::error_code& ec, std::size_t bt)
 {
-    if(ec or bt == 0) disconnect();
-        switch(*d)
-        {
-        case Client_Packets::Movement:
-        {
-            if(!currentWorld) break;
-            Client_Packets::Packet_Movement movement;
-            movement.recv(*sock);
+    if(ec or bt == 0) {
+            this->error("Failed to receive data");
+            disconnected = boost::logic::indeterminate;
+            disconnect();
+            return;
+    }
+    switch(*d)
+    {
+    case Client_Packets::Movement:
+    {
+        if(!currentWorld) break;
+        Client_Packets::Packet_Movement movement;
+        movement.recv(*sock);
 
-            // Use a eventChain here
+        // Use a eventChain here
 
-            // This can be eventChained
-            PlayerPositionOffset offset;
-            offset.x = movement.at<movement.x>() - pos.x;
-            offset.y = movement.at<movement.y>() - pos.y;
-            offset.z = movement.at<movement.z>() - pos.z;
-            offset.h = movement.at<movement.h>() - pos.h;
-            offset.p = movement.at<movement.p>() - pos.p;
+        // This can be eventChained
+        PlayerPositionOffset offset;
+        offset.x = movement.at<movement.x>() - pos.x;
+        offset.y = movement.at<movement.y>() - pos.y;
+        offset.z = movement.at<movement.z>() - pos.z;
+        offset.h = movement.at<movement.h>() - pos.h;
+        offset.p = movement.at<movement.p>() - pos.p;
 
-            pos.x = movement.at<movement.x>();
-            pos.y = movement.at<movement.y>();
-            pos.z = movement.at<movement.z>();
-            pos.h = movement.at<movement.h>();
-            pos.p = movement.at<movement.p>();
+        pos.x = movement.at<movement.x>();
+        pos.y = movement.at<movement.y>();
+        pos.z = movement.at<movement.z>();
+        pos.h = movement.at<movement.h>();
+        pos.p = movement.at<movement.p>();
 
-            if( offset.x or offset.y or offset.z ) {
-                    pos.x = movement.at<movement.x>();
-                    pos.y = movement.at<movement.y>();
-                    pos.z = movement.at<movement.z>();
-            }
-            if( offset.h or offset.p ) {
-                    pos.h = movement.at<movement.h>();
-                    pos.p = movement.at<movement.p>();
-            }
-            currentWorld->updatePosition(*this, offset);
-            // And another eventChain here
+        if( offset.x or offset.y or offset.z ) {
+                pos.x = movement.at<movement.x>();
+                pos.y = movement.at<movement.y>();
+                pos.z = movement.at<movement.z>();
         }
-        break;
-        case Client_Packets::Blockchange:
-        {
-            Client_Packets::Packet_Blockchange change;
-            change.recv(*sock);
+        if( offset.h or offset.p ) {
+                pos.h = movement.at<movement.h>();
+                pos.p = movement.at<movement.p>();
+        }
+        currentWorld->updatePosition(*this, offset);
+        // And another eventChain here
+    }
+    break;
+    case Client_Packets::Blockchange:
+    {
+        Client_Packets::Packet_Blockchange change;
+        change.recv(*sock);
 
-            if(!currentWorld) break;
+        if(!currentWorld) break;
 
-            Blocks::BlockInfo2 b;
-            b.x = change.at<change.x>();
-            b.y = change.at<change.y>();
-            b.z = change.at<change.z>();
-            b.type = change.at<change.mode>() ? change.at<change.block>() : BLOCK_AIR;
-            currentWorld->changeBlock(b);
-        }
-        break;
-        case Client_Packets::Chat:
-        {
-            Client_Packets::Packet_Chat chat;
-            chat.recv(*sock);
-            trim_right(chat.at<chat.msg>());
-            Log->info(DBInfo.username,": ", chat.at<chat.msg>());
-            currentWorld->sendChat(format::player::multiLine(DBInfo.username, chat.at<chat.msg>()));
-        }
-        break;
-        }
-        registerDataHandler();
+        Blocks::BlockInfo2 b;
+        b.x = change.at<change.x>();
+        b.y = change.at<change.y>();
+        b.z = change.at<change.z>();
+        b.type = change.at<change.mode>() ? change.at<change.block>() : BLOCK_AIR;
+        currentWorld->changeBlock(b);
+    }
+    break;
+    case Client_Packets::Chat:
+    {
+        Client_Packets::Packet_Chat chat;
+        chat.recv(*sock);
+        trim_right(chat.at<chat.msg>());
+        Log->info(DBInfo.username,": ", chat.at<chat.msg>());
+        currentWorld->sendChat(format::player::multiLine(DBInfo.username, chat.at<chat.msg>()));
+    }
+    break;
+    }
+    registerDataHandler();
 }
 
 PlayerInfoRef* Player::operator->()

@@ -95,10 +95,10 @@ void sendStaticLengthString(const t& str, size_t size, boost::asio::ip::tcp::soc
 }
 
 template<class t>
-void recvStaticLengthString(t str, size_t size, boost::asio::ip::tcp::socket& sock){
+void recvStaticLengthString(t& str, size_t size, boost::asio::ip::tcp::socket& sock){
     str.resize(size);
     sock.receive(boost::asio::buffer((char*)str.data(),str.length()));
-    //std::cout << "Recieved string: " << a << std::endl;
+    std::cout << "Recieved string: " << str.c_str() << std::endl;
 }
 
 template<>
