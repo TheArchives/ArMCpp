@@ -99,7 +99,7 @@ namespace Client_Packets
 {
     enum: uint8_t { Info, Blockchange = 5, Movement = 8, Chat = 13 };
 
-    struct KeepAlive0x00<\x00,int>::DynamicLength
+    struct KeepAlive0x00 : Packet<\x00,int>::DynamicLength
     {
         enum:uint32_t
         {
@@ -107,7 +107,7 @@ namespace Client_Packets
         };
     };
     
-    struct Handshake0x02<\x02,byte,std::wstring,std::wstring,int>::DynamicLength
+    struct Handshake0x02 : Packet<\x02,byte,std::wstring,std::wstring,int>::DynamicLength
     {
         enum:uint32_t
         {
@@ -118,7 +118,7 @@ namespace Client_Packets
         };
     };
     
-    struct ChatMessage0x03<\x03,std::wstring>::DynamicLength
+    struct ChatMessage0x03 : Packet<\x03,std::wstring>::DynamicLength
     {
         enum:uint32_t
         {
@@ -126,7 +126,7 @@ namespace Client_Packets
         };
     };
     
-    struct UseEntity0x07<\x07,int,int,bool>::DynamicLength
+    struct UseEntity0x07 : Packet<\x07,int,int,bool>::DynamicLength
     {
         enum:uint32_t
         {
@@ -136,7 +136,7 @@ namespace Client_Packets
         };
     };
     
-    struct Player0x0A<\x0A,bool>::DynamicLength
+    struct Player0x0A : Packet<\x0A,bool>::DynamicLength
     {
         enum:int8_t
         {
@@ -144,7 +144,7 @@ namespace Client_Packets
         };
     };
     
-    struct PlayerPosition0x0B<\x0B,double,double,double,double,bool>::DynamicLength
+    struct PlayerPosition0x0B : Packet<\x0B,double,double,double,double,bool>::DynamicLength
     {
         enum:int32_t
         {
@@ -156,7 +156,7 @@ namespace Client_Packets
         };
     };
     
-    struct PlayerLook0x0C<\x0C,float,float,bool>::DynamicLength
+    struct PlayerLook0x0C : Packet<\x0C,float,float,bool>::DynamicLength
     {
         enum:int32_t
         {
@@ -166,7 +166,7 @@ namespace Client_Packets
         };
     };
     
-    struct PlayerPosLook0x0D<\x0D,double,double,double,double,float,float,bool>::DynamicLength
+    struct PlayerPosLook0x0D : Packet<\x0D,double,double,double,double,float,float,bool>::DynamicLength
     {
         enum:int32_t
         {
@@ -180,7 +180,7 @@ namespace Client_Packets
         };
     };
     
-    struct PlayerDigging0x0E<\x0E,byte,int,byte,int,byte>::DynamicLength
+    struct PlayerDigging0x0E : Packet<\x0E,byte,int,byte,int,byte>::DynamicLength
     {
         enum:int32_t
         {
@@ -192,7 +192,7 @@ namespace Client_Packets
         };
     };
     
-    struct PlayerBlockPlacement0x0F<\x0F,int,ubyte,int,byte,SlotData,byte,byte,byte>::DynamicLength
+    struct PlayerBlockPlacement0x0F : Packet<\x0F,int,ubyte,int,byte,SlotData,byte,byte,byte>::DynamicLength
     {
         enum:int32_t
         {
@@ -207,7 +207,7 @@ namespace Client_Packets
         };
     };
     
-    struct HeldItemChange0x10<\x10,short>::DynamicLength
+    struct HeldItemChange0x10 : Packet<\x10,short>::DynamicLength
     {
         enum:int32_t
         {
@@ -215,7 +215,7 @@ namespace Client_Packets
         };
     };
     
-    struct Animation0x12<\x12,int,byte>::DynamicLength
+    struct Animation0x12 : Packet<\x12,int,byte>::DynamicLength
     {
         enum:int32_t
         {
@@ -224,7 +224,7 @@ namespace Client_Packets
         };
     };
     
-    struct EntityAction0x13<\x13,int,byte>::DynamicLength
+    struct EntityAction0x13 : Packet<\x13,int,byte>::DynamicLength
     {
         enum:int32_t
         {
@@ -238,7 +238,7 @@ namespace Client_Packets
 
 namespace Server_Packets
 {
-    struct KeepAlive0x00<\x00,int32_t>::DynamicLength
+    struct KeepAlive0x00 : Packet<\x00,int32_t>::DynamicLength
     {
         enum:uint32_t
         {
@@ -246,7 +246,7 @@ namespace Server_Packets
         };
     };
     
-    struct LoginRequest0x01<\x01,int32_t,std::wstring,byte,byte,byte,ubyte,ubyte>::DynamicLength
+    struct LoginRequest0x01 : Packet<\x01,int32_t,std::wstring,byte,byte,byte,ubyte,ubyte>::DynamicLength
     {
         enum:uint32_t
         {
@@ -260,7 +260,7 @@ namespace Server_Packets
         };
     };
     
-    struct ChatMessage0x03<\x03,std::wstring>::DynamicLength
+    struct ChatMessage0x03 : Packet<\x03,std::wstring>::DynamicLength
     {
         enum:uint32_t
         {
@@ -268,7 +268,7 @@ namespace Server_Packets
         };
     };
     
-    struct TimeUpdate0x04<\x04,long>::DynamicLength
+    struct TimeUpdate0x04 : Packet<\x04,long>::DynamicLength
     {
         enum:uint32_t
         {
@@ -276,7 +276,7 @@ namespace Server_Packets
         };
     };
     
-    struct EntityEquipment0x05<\x05,int,short,SlotData>::DynamicLength
+    struct EntityEquipment0x05 : Packet<\x05,int,short,SlotData>::DynamicLength
     {
         enum:uint32_t
         {
@@ -286,7 +286,7 @@ namespace Server_Packets
         };
     };
     
-    struct SpawnPosition0x06<\x06,int,int,int>::DynamicLength
+    struct SpawnPosition0x06 : Packet<\x06,int,int,int>::DynamicLength
     {
         enum:uint32_t
         {
@@ -296,7 +296,7 @@ namespace Server_Packets
         };
     };
     
-    struct UpdateHealth0x08<\x08,short,short,float>::DynamicLength
+    struct UpdateHealth0x08 : Packet<\x08,short,short,float>::DynamicLength
     {
         enum:uint32_t
         {
@@ -306,7 +306,7 @@ namespace Server_Packets
         };
     };
     
-    struct Respawn0x09<\x09,int,byte,byte,short,std::string>::DynamicLength
+    struct Respawn0x09 : Packet<\x09,int,byte,byte,short,std::string>::DynamicLength
     {
         enum:uint32_t
         {
@@ -318,7 +318,7 @@ namespace Server_Packets
         };
     };
     
-    struct PlayerPosLook0x0D<\x0D,double,double,double,double,float,float,bool>::DynamicLength
+    struct PlayerPosLook0x0D : Packet<\x0D,double,double,double,double,float,float,bool>::DynamicLength
     {
         enum:int32_t
         {
@@ -332,7 +332,7 @@ namespace Server_Packets
         };
     };
     
-    struct UseBed0x11<\x11,int,byte,int,byte,int>::DynamicLength
+    struct UseBed0x11 : Packet<\x11,int,byte,int,byte,int>::DynamicLength
     {
         enum:int32_t
         {
@@ -344,7 +344,7 @@ namespace Server_Packets
         };
     };
     
-    struct Animation0x12<\x12,int,byte>::DynamicLength
+    struct Animation0x12 : Packet<\x12,int,byte>::DynamicLength
     {
         enum:int32_t
         {
@@ -352,6 +352,8 @@ namespace Server_Packets
             animation
         };
     };
+    
+    struct SpawnNamedEntity0x14 : Packet<\x14,int,std::string,int,int,int,byte,byte,short,
         
 }
 
