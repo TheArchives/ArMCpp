@@ -179,6 +179,61 @@ namespace Client_Packets
             on_ground
         };
     };
+    
+    struct PlayerDigging0x0E<\x0E,byte,int,byte,int,byte>::DynamicLength
+    {
+        enum:int32_t
+        {
+            status,
+            x,
+            y,
+            z,
+            face
+        };
+    };
+    
+    struct PlayerBlockPlacement0x0F<\x0F,int,ubyte,int,byte,SlotData,byte,byte,byte>::DynamicLength
+    {
+        enum:int32_t
+        {
+            x,
+            y,
+            z,
+            direction,
+            held_item,
+            cursor_pos_x,
+            cursor_pos_y,
+            cursor_pos_z
+        };
+    };
+    
+    struct HeldItemChange0x10<\x10,short>::DynamicLength
+    {
+        enum:int32_t
+        {
+            slotid
+        };
+    };
+    
+    struct Animation0x12<\x12,int,byte>::DynamicLength
+    {
+        enum:int32_t
+        {
+            eid,
+            animation
+        };
+    };
+    
+    struct EntityAction0x13<\x13,int,byte>::DynamicLength
+    {
+        enum:int32_t
+        {
+            eid,
+            actionid
+        };
+    };
+    
+    
 }
 
 namespace Server_Packets
@@ -277,6 +332,27 @@ namespace Server_Packets
         };
     };
     
+    struct UseBed0x11<\x11,int,byte,int,byte,int>::DynamicLength
+    {
+        enum:int32_t
+        {
+            entityid,
+            unknown,
+            x_coord,
+            y_coord,
+            z_coord
+        };
+    };
+    
+    struct Animation0x12<\x12,int,byte>::DynamicLength
+    {
+        enum:int32_t
+        {
+            eid,
+            animation
+        };
+    };
+        
 }
 
 enum MAP_BLOCK :
