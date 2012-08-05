@@ -60,9 +60,9 @@ class serverClass
     ServerInfo info;
     std::set<tcpSocketP> connections;
 public:
-    eventChain<onConnectionEvent> onConnect;
-    FunctionChain<bool(char, tcpSocketP)> onInitialData;
-    FunctionChain<void()> onServerStep;
+    EventChain::eventChain<Events::onConnectionEvent> onConnect;
+    EventChain::FunctionChain<bool(char, tcpSocketP)> onInitialData;
+    EventChain::FunctionChain<void()> onServerStep;
 
     serverClass();
     ~serverClass();

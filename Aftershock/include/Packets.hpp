@@ -34,10 +34,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <initializer_list>
 #include <boost/asio.hpp>
 
-// Iterate over tuple elements
 
-
-namespace Packet_Tuple_Helpers
+namespace Packets {
+/// @cond NoDocument
+namespace TupleDetail
 {
 
 template<class t, class f, size_t size>
@@ -111,8 +111,8 @@ size_t CountTupleElements(const t &a,const std::initializer_list<size_t>& d)
     const_tuple_for_each(a,ce);
     return ce.size;
 }
-
-}
+} // End of namespace TupleDetail
+/// @endcond NoDocument
 
 namespace ByteOrder
 {
@@ -176,20 +176,25 @@ inline uint64_t& swap<uint64_t>(uint64_t& a)
 }
 
 
+
 struct Packet_Base
 {
-    const char id; // ID of packet
+    const char id; ///< ID of packet
 
     Packet_Base(const char& i): id(i) {}
 
-    virtual void send(boost::asio::ip::tcp::socket& s) const = 0; // Send data instantly
+    virtual void send(boost::asio::ip::tcp::socket& s) const = 0; ///< Send data instantly
+    virtual void recv(boost::asio::ip::tcp::socket& s) = 0; ///< Receive data instantly
     //virtual void async_send(boost::asio::ip::tcp::socket& s) const = 0; // Send data on next sync
+
+    boost::asio::ip::tcp::socket& operator<<(boost::asio::ip::tcp::socket& s) const;
+    boost::asio::ip::tcp::socket& operator>>(boost::asio::ip::tcp::socket& s);
+
     virtual ~Packet_Base() {}
 };
 
-namespace Packet_Helpers
-{
-
+/// @cond NoDocument
+namespace Detail {
 struct outputData
 {
     std::ostream &s;
@@ -289,7 +294,8 @@ template<>
 void recvDynamicLengthData::operator()<std::string>(std::string&);
 template<>
 void recvDynamicLengthData::operator()<std::wstring>(std::wstring&);
-}
+
+/// @endcond NoDocument
 
 template<class...t>
 struct PacketData {
@@ -310,17 +316,20 @@ struct PacketData {
     PacketData():data(){}
 };
 
+} // End of Detail namespace
+} // End of Packet namespace
+
 // For using static length packets (static string lengths)
 template<char ID, class...t>
 struct Packet
 {
     template<int...strSizes>
-    struct StaticLength : Packet_Base, PacketData<t...> {
+    struct StaticLength : Packets::Packet_Base, Packets::Detail::PacketData<t...> {
         const std::list<size_t> sizes;
-        StaticLength(): Packet_Base(ID), PacketData<t...>(),sizes( {strSizes...}){}
+        StaticLength(): Packets::Packet_Base(ID), Packets::Detail::PacketData<t...>(),sizes( {strSizes...}){}
         template<class...t2>
-        StaticLength(const t2&... d): Packet_Base(ID), PacketData<t...>(d...), sizes( {strSizes...}) {}
-        StaticLength(const StaticLength<strSizes...>& a): Packet_Base(a.id), PacketData<t...>(a.data), sizes(a.sizes) {}
+        StaticLength(const t2&... d): Packets::Packet_Base(ID), Packets::Detail::PacketData<t...>(d...), sizes( {strSizes...}) {}
+        StaticLength(const StaticLength<strSizes...>& a): Packets::Packet_Base(a.id), Packets::Detail::PacketData<t...>(a.data), sizes(a.sizes) {}
         StaticLength<strSizes...>& operator=(const StaticLength<strSizes...>& a)
         {
             this->data = a.data;
@@ -330,26 +339,26 @@ struct Packet
         {
             s.send(boost::asio::buffer(&id,1));
             //std::cout << "Sent ID " << (int)id << std::endl;
-            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::sendStaticLengthData(s,sizes.begin(), sizes.end()));
+            Packets::TupleDetail::const_tuple_for_each(this->data,Packets::Detail::sendStaticLengthData(s,sizes.begin(), sizes.end()));
         }
         void recv(boost::asio::ip::tcp::socket& s)
         {
-            Packet_Helpers::recvStaticLengthData ss(s,sizes.begin(), sizes.end());
-            Packet_Tuple_Helpers::tuple_for_each(this->data,ss);
+            Packets::Detail::recvStaticLengthData ss(s,sizes.begin(), sizes.end());
+            Packets::TupleDetail::tuple_for_each(this->data,ss);
             //std::cout << "Recieved ID " << (int)id << std::endl;
         }
 
         std::ostream& operator<<(std::ostream& s)const
         {
-            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::outputData(s));
+            Packets::TupleDetail::const_tuple_for_each(this->data,Packets::Detail::outputData(s));
             return s;
         }
     };
-    struct DynamicLength : Packet_Base, PacketData<t...> {
-        DynamicLength(): Packet_Base(ID), PacketData<t...>(){}
+    struct DynamicLength : Packets::Packet_Base, Packets::Detail::PacketData<t...> {
+        DynamicLength(): Packets::Packet_Base(ID), Packets::Detail::PacketData<t...>(){}
         template<class...t2>
-        DynamicLength(const t2&... d): Packet_Base(ID), PacketData<t...>(d...) {}
-        DynamicLength(const DynamicLength& a): Packet_Base(a.id), PacketData<t...>(a.data) {}
+        DynamicLength(const t2&... d): Packets::Packet_Base(ID), Packets::Detail::PacketData<t...>(d...) {}
+        DynamicLength(const DynamicLength& a): Packets::Packet_Base(a.id), Packets::Detail::PacketData<t...>(a.data) {}
         DynamicLength& operator=(const DynamicLength& a)
         {
             this->data = a.data;
@@ -359,23 +368,22 @@ struct Packet
         {
             s.send(boost::asio::buffer(&id,1));
             //std::cout << "Sent ID " << (int)id << std::endl;
-            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::sendDynamicLengthData(s));
+           Packets::TupleDetail::const_tuple_for_each(this->data,Packets::Detail::sendDynamicLengthData(s));
         }
         void recv(boost::asio::ip::tcp::socket& s)
         {
-            Packet_Helpers::recvDynamicLengthData ss(s);
-            Packet_Tuple_Helpers::tuple_for_each(this->data,ss);
+            Packets::Detail::recvDynamicLengthData ss(s);
+            Packets::TupleDetail::tuple_for_each(this->data,ss);
             //std::cout << "Recieved ID " << (int)id << std::endl;
         }
 
         std::ostream& operator<<(std::ostream& s)const
         {
-            Packet_Tuple_Helpers::const_tuple_for_each(this->data,Packet_Helpers::outputData(s));
+            Packets::TupleDetail::const_tuple_for_each(this->data,Packets::Detail::outputData(s));
             return s;
         }
     };
 };
-
 
 
 

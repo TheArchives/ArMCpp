@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1325271787 source:c:\users\adam\projects\aftershock\code\classicplugin\main.cpp
+1344184017 source:c:\users\adam\projects\aftershock\code\classicplugin\main.cpp
 	"Logging.hpp"
 	"Plugin.hpp"
 	"version.h"
@@ -8,7 +8,7 @@
 	"Worlds.hpp"
 	<iostream>
 
-1314133785 c:\users\adam\projects\aftershock\code\include\logging.hpp
+1344177513 c:\users\adam\projects\aftershock\code\include\logging.hpp
 	<string>
 	<fstream>
 	<sstream>
@@ -16,13 +16,13 @@
 	<boost/lexical_cast.hpp>
 	<boost/format.hpp>
 
-1316520971 c:\users\adam\projects\aftershock\code\include\plugin.hpp
+1344182450 c:\users\adam\projects\aftershock\code\include\plugin.hpp
 	<string>
 	<list>
 	<memory>
 	"Aftershock.hpp"
 
-1325209087 c:\users\adam\projects\aftershock\code\include\aftershock.hpp
+1344182771 c:\users\adam\projects\aftershock\code\include\aftershock.hpp
 	<boost/system/error_code.hpp>
 	<boost/thread.hpp>
 	<typeinfo>
@@ -32,20 +32,20 @@
 
 1316631419 c:\users\adam\projects\aftershock\code\\version.h
 
-1325208387 c:\users\adam\projects\aftershock\code\include\server.hpp
+1344182403 c:\users\adam\projects\aftershock\code\include\server.hpp
 	<string>
 	<set>
 	<boost/asio.hpp>
 	"Aftershock.hpp"
 	"eventChain.hpp"
 
-1316632665 c:\users\adam\projects\aftershock\code\include\eventchain.hpp
+1344182233 c:\users\adam\projects\aftershock\code\include\eventchain.hpp
 	<list>
 	<boost/signal.hpp>
 	<boost/type_traits.hpp>
 	"Events.hpp"
 
-1325213851 c:\users\adam\projects\aftershock\code\include\events.hpp
+1344182166 c:\users\adam\projects\aftershock\code\include\events.hpp
 	<boost/logic/tribool.hpp>
 	<boost/asio.hpp>
 	<list>
@@ -89,7 +89,7 @@
 	"Server.hpp"
 	<boost/algorithm/string/trim.hpp>
 
-1325212847 c:\users\adam\projects\aftershock\code\classicplugin\players.hpp
+1344183792 c:\users\adam\projects\aftershock\code\classicplugin\players.hpp
 	<string>
 	<iostream>
 	<list>
@@ -100,7 +100,7 @@
 	<boost/asio.hpp>
 	<boost/lexical_cast.hpp>
 
-1343940078 c:\users\adam\projects\aftershock\code\classicplugin\player.hpp
+1344183755 c:\users\adam\projects\aftershock\code\classicplugin\player.hpp
 	"Aftershock.hpp"
 	"ClassicProtocol.hpp"
 	"PlayerDB.hpp"
@@ -117,14 +117,14 @@
 1343930337 c:\users\adam\projects\aftershock\code\classicplugin\classicprotocol.hpp
 	"Packets.hpp"
 
-1343929505 c:\users\adam\projects\aftershock\code\include\packets.hpp
+1344183696 c:\users\adam\projects\aftershock\code\include\packets.hpp
 	<tuple>
 	<string>
 	<ostream>
 	<initializer_list>
 	<boost/asio.hpp>
 
-1325189407 c:\users\adam\projects\aftershock\code\include\taskscheduler.hpp
+1344182743 c:\users\adam\projects\aftershock\code\include\taskscheduler.hpp
 	<queue>
 	<functional>
 	<memory>
@@ -135,7 +135,7 @@
 	<boost/thread.hpp>
 	"Logging.hpp"
 
-1325182761 c:\users\adam\projects\aftershock\code\classicplugin\world.hpp
+1344183724 c:\users\adam\projects\aftershock\code\classicplugin\world.hpp
 	"Aftershock.hpp"
 	"taskScheduler.hpp"
 	"ClassicProtocol.hpp"
@@ -163,7 +163,7 @@
 	<type_traits>
 	<typeinfo>
 
-1325203810 source:c:\users\adam\projects\aftershock\code\classicplugin\world.cpp
+1344183956 source:c:\users\adam\projects\aftershock\code\classicplugin\world.cpp
 	"World.hpp"
 	<boost/iostreams/filtering_stream.hpp>
 	<boost/iostreams/device/array.hpp>
@@ -188,7 +188,7 @@
 	<list>
 	"World.hpp"
 
-1343940233 source:c:\users\adam\projects\aftershock\code\classicplugin\player.cpp
+1344184050 source:c:\users\adam\projects\aftershock\code\classicplugin\player.cpp
 	"Player.hpp"
 	"Server.hpp"
 	"Players.hpp"

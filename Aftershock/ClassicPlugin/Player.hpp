@@ -88,7 +88,7 @@ class Player
     PlayerPosition pos;
 
     PlayerInfoRef DBInfo;
-    Task sendMapTask;
+    TaskScheduler::Task sendMapTask;
     const uint8_t ID;
 
     void registerDataHandler();
@@ -140,7 +140,7 @@ public:
     }
 
 
-    void sendPacket(const Packet_Base& p){
+    void sendPacket(const Packets::Packet_Base& p){
         if(disconnected == true) {
             this->error("Tried to send data to disconnected player");
             return;

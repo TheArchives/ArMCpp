@@ -654,7 +654,7 @@
 	<boost/asio.hpp>
 	<list>
 
-1325213190 source:c:\users\adam\projects\aftershock\code\launcher.cpp
+1344184176 source:c:\users\adam\projects\aftershock\code\launcher.cpp
 	"Server.hpp"
 	"Aftershock.hpp"
 	"Logging.hpp"
@@ -814,12 +814,13 @@
 
 1316631419 c:\users\adam\projects\aftershock\code\version.h
 
-1325211676 source:c:\users\adam\projects\aftershock\code\src\aftershock.cpp
+1344182743 source:c:\users\adam\projects\aftershock\code\src\aftershock.cpp
 	"Server.hpp"
 	"Aftershock.hpp"
 	"Logging.hpp"
 	"taskScheduler.hpp"
 	"Aftershock.hpp"
+	"Plugin.hpp"
 	"../version.h"
 	<cxxabi.h>
 	<boost/random.hpp>
@@ -835,12 +836,12 @@
 	"Logging.hpp"
 	"taskScheduler.hpp"
 
-1314133769 source:c:\users\adam\projects\aftershock\code\src\logging.cpp
+1344107123 source:c:\users\adam\projects\aftershock\code\src\logging.cpp
 	"Logging.hpp"
 	<iostream>
 	<boost/date_time.hpp>
 
-1324823210 source:c:\users\adam\projects\aftershock\code\src\packets.cpp
+1344183657 source:c:\users\adam\projects\aftershock\code\src\packets.cpp
 	"Packets.hpp"
 
 1325205529 source:c:\users\adam\projects\aftershock\code\src\player.cpp
@@ -853,7 +854,7 @@
 1314130480 source:c:\users\adam\projects\aftershock\code\src\playerdb.cpp
 	"PlayerDB.hpp"
 
-1325313345 source:c:\users\adam\projects\aftershock\code\src\server.cpp
+1344182653 source:c:\users\adam\projects\aftershock\code\src\server.cpp
 	"Server.hpp"
 	<iostream>
 	"TaskScheduler.hpp"
@@ -874,7 +875,7 @@
 	<unistd.h>
 	<unixio.h>
 
-1325189425 source:c:\users\adam\projects\aftershock\code\src\taskscheduler.cpp
+1344182743 source:c:\users\adam\projects\aftershock\code\src\taskscheduler.cpp
 	"taskScheduler.hpp"
 
 1313171900 source:c:\users\adam\projects\aftershock\code\src\worlds.cpp
@@ -885,7 +886,7 @@
 	"Server.hpp"
 	<boost/algorithm/string/trim.hpp>
 
-1314133785 c:\users\adam\projects\aftershock\code\include\logging.hpp
+1344177513 c:\users\adam\projects\aftershock\code\include\logging.hpp
 	<string>
 	<fstream>
 	<sstream>
@@ -893,7 +894,7 @@
 	<boost/lexical_cast.hpp>
 	<boost/format.hpp>
 
-1324823178 c:\users\adam\projects\aftershock\code\include\packets.hpp
+1344183696 c:\users\adam\projects\aftershock\code\include\packets.hpp
 	<tuple>
 	<string>
 	<ostream>
@@ -913,7 +914,7 @@
 	<boost/lexical_cast.hpp>
 	<boost/enable_shared_from_this.hpp>
 
-1325209087 c:\users\adam\projects\aftershock\code\include\aftershock.hpp
+1344182771 c:\users\adam\projects\aftershock\code\include\aftershock.hpp
 	<boost/system/error_code.hpp>
 	<boost/thread.hpp>
 	<typeinfo>
@@ -955,7 +956,7 @@
 	"DB_Row.hpp"
 	<map>
 
-1325189407 c:\users\adam\projects\aftershock\code\include\taskscheduler.hpp
+1344182743 c:\users\adam\projects\aftershock\code\include\taskscheduler.hpp
 	<queue>
 	<functional>
 	<memory>
@@ -984,13 +985,13 @@
 	<boost/thread/mutex.hpp>
 	<libNBT/NBTLib.hpp>
 
-1316632665 c:\users\adam\projects\aftershock\code\include\eventchain.hpp
+1344182233 c:\users\adam\projects\aftershock\code\include\eventchain.hpp
 	<list>
 	<boost/signal.hpp>
 	<boost/type_traits.hpp>
 	"Events.hpp"
 
-1325213851 c:\users\adam\projects\aftershock\code\include\events.hpp
+1344182166 c:\users\adam\projects\aftershock\code\include\events.hpp
 	<boost/logic/tribool.hpp>
 	<boost/asio.hpp>
 	<list>
@@ -1005,7 +1006,7 @@
 	<type_traits>
 	<typeinfo>
 
-1325208387 c:\users\adam\projects\aftershock\code\include\server.hpp
+1344182403 c:\users\adam\projects\aftershock\code\include\server.hpp
 	<string>
 	<set>
 	<boost/asio.hpp>
@@ -1029,7 +1030,7 @@
 	<list>
 	"World.hpp"
 
-1325213159 source:c:\users\adam\projects\aftershock\code\src\plugin.cpp
+1344178282 source:c:\users\adam\projects\aftershock\code\src\plugin.cpp
 	"Plugin.hpp"
 	"Logging.hpp"
 	"taskScheduler.hpp"
@@ -1037,7 +1038,7 @@
 	<windows.h>
 	<dlfcn.h>
 
-1316520971 c:\users\adam\projects\aftershock\code\include\plugin.hpp
+1344182450 c:\users\adam\projects\aftershock\code\include\plugin.hpp
 	<string>
 	<list>
 	<memory>
@@ -1058,4 +1059,122 @@
 	"version.h"
 	"Server.hpp"
 	<iostream>
+
+1325213190 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\launcher.cpp
+	"Server.hpp"
+	"Aftershock.hpp"
+	"Logging.hpp"
+	"taskScheduler.hpp"
+	"Plugin.hpp"
+	"version.h"
+	<boost/program_options.hpp>
+	<boost/exception/all.hpp>
+	<cstdio>
+	<conio.h>
+	<cstdlib>
+
+1325208387 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\server.hpp
+	<string>
+	<set>
+	<boost/asio.hpp>
+	"Aftershock.hpp"
+	"eventChain.hpp"
+
+1325209087 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\aftershock.hpp
+	<boost/system/error_code.hpp>
+	<boost/thread.hpp>
+	<typeinfo>
+	<string>
+	<exception>
+	<array>
+
+1316632665 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\eventchain.hpp
+	<list>
+	<boost/signal.hpp>
+	<boost/type_traits.hpp>
+	"Events.hpp"
+
+1325213851 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\events.hpp
+	<boost/logic/tribool.hpp>
+	<boost/asio.hpp>
+	<list>
+
+1314133785 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\logging.hpp
+	<string>
+	<fstream>
+	<sstream>
+	<boost/thread/mutex.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/format.hpp>
+
+1325189407 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\taskscheduler.hpp
+	<queue>
+	<functional>
+	<memory>
+	<csignal>
+	<atomic>
+	<boost/date_time.hpp>
+	<boost/enable_shared_from_this.hpp>
+	<boost/thread.hpp>
+	"Logging.hpp"
+
+1316520971 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\plugin.hpp
+	<string>
+	<list>
+	<memory>
+	"Aftershock.hpp"
+
+1316631419 c:\users\adam\projects\arcmp++\armcpp\aftershock\version.h
+
+1325208533 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\heartbeat.cpp
+	<map>
+	<boost/asio.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/thread.hpp>
+	<boost/algorithm/string/trim.hpp>
+	"Server.hpp"
+	"Logging.hpp"
+	"taskScheduler.hpp"
+
+1314133769 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\logging.cpp
+	"Logging.hpp"
+	<iostream>
+	<boost/date_time.hpp>
+
+1343929809 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\packets.cpp
+	"Packets.hpp"
+
+1343929505 c:\users\adam\projects\arcmp++\armcpp\aftershock\include\packets.hpp
+	<tuple>
+	<string>
+	<ostream>
+	<initializer_list>
+	<boost/asio.hpp>
+
+1325213159 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\plugin.cpp
+	"Plugin.hpp"
+	"Logging.hpp"
+	"taskScheduler.hpp"
+	<boost/filesystem.hpp>
+	<windows.h>
+	<dlfcn.h>
+
+1325313345 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\server.cpp
+	"Server.hpp"
+	<iostream>
+	"TaskScheduler.hpp"
+
+1325189425 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\taskscheduler.cpp
+	"taskScheduler.hpp"
+
+1325211676 source:c:\users\adam\projects\arcmp++\armcpp\aftershock\src\aftershock.cpp
+	"Server.hpp"
+	"Aftershock.hpp"
+	"Logging.hpp"
+	"taskScheduler.hpp"
+	"Aftershock.hpp"
+	"../version.h"
+	<cxxabi.h>
+	<boost/random.hpp>
+	<boost/lexical_cast.hpp>
 

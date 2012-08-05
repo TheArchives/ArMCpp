@@ -34665,3 +34665,57 @@
 21:51:30.003900 - Debug - Player(1, Adam01) unspawned players from World(Default)
 21:51:30.003900 - Debug - Player(1, Adam01) left World(Default)
 21:51:30.004900 - Info  - Player(1, Adam01): Disconnected
+17:30:21.581600 - Info  - Server launched
+17:30:21.599600 - Info  - Created Plugin Handler
+17:30:21.600600 - Debug - Loading plugin 'ClassicPlugin'
+17:30:21.660600 - Debug - Loading Default map data
+17:30:21.661600 - Debug - Processing map...
+17:30:21.671600 - Debug - Blocks size: 262144, Zipped size: 2183
+17:30:21.672600 - Debug - 3 chunks
+17:30:21.672600 - Info  - Booted world 'Default'
+17:30:21.674600 - Debug - Imported player database.
+17:30:21.674600 - Debug - Added hooks
+17:30:21.675600 - ClassicPlugin - Loaded
+17:30:21.697600 - Info  - Loaded plugin 'ClassicPlugin'
+17:30:22.042600 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+17:30:23.799600 - Info  - Unloading plugins...
+17:30:23.799600 - Debug - Deleting players...
+17:30:23.799600 - Debug - Done
+17:30:23.800600 - Debug - Saved player database.
+17:30:23.801600 - Debug - Shutting down worlds...
+17:30:23.801600 - Info  - Shutting down world 'Default'
+17:30:23.802600 - Debug - Done
+17:30:23.804600 - ClassicPlugin - Unloaded
+17:30:23.806600 - Info  - Unloaded plugin 'ClassicPlugin'
+17:30:23.807600 - Info  - Destroyed Plugin Handler
+17:30:23.807600 - Debug - Deleting server...
+17:30:23.808600 - Debug - 0 open connections
+17:30:23.809600 - Debug - Done
+17:30:23.822600 - Debug - Server engine returned: 0
+17:30:40.114600 - Info  - Restarting server on user request
+17:30:40.121600 - Info  - Created Plugin Handler
+17:30:40.122600 - Debug - Loading plugin 'ClassicPlugin'
+17:30:40.132600 - Debug - Loading Default map data
+17:30:40.132600 - Debug - Processing map...
+17:30:40.142600 - Debug - Blocks size: 262144, Zipped size: 2183
+17:30:40.143600 - Debug - 3 chunks
+17:30:40.144600 - Info  - Booted world 'Default'
+17:30:40.146600 - Debug - Imported player database.
+17:30:40.146600 - Debug - Added hooks
+17:30:40.147600 - ClassicPlugin - Loaded
+17:30:40.148600 - Info  - Loaded plugin 'ClassicPlugin'
+17:30:40.582600 - Info  - http://www.minecraft.net/classic/play/ef299362d119f6e52dfabad940c58273
+17:30:58.099600 - Info  - Unloading plugins...
+17:30:58.099600 - Debug - Deleting players...
+17:30:58.101600 - Debug - Done
+17:30:58.102600 - Debug - Saved player database.
+17:30:58.103600 - Debug - Shutting down worlds...
+17:30:58.103600 - Info  - Shutting down world 'Default'
+17:30:58.105600 - Debug - Done
+17:30:58.106600 - ClassicPlugin - Unloaded
+17:30:58.108600 - Info  - Unloaded plugin 'ClassicPlugin'
+17:30:58.109600 - Info  - Destroyed Plugin Handler
+17:30:58.110600 - Debug - Deleting server...
+17:30:58.110600 - Debug - 0 open connections
+17:30:58.111600 - Debug - Done
+17:30:58.113600 - Debug - Server engine returned: 0

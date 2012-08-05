@@ -44,6 +44,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 using namespace std;
 using namespace boost;
 namespace po = boost::program_options;
+using namespace Aftershock;
+using namespace Plugin;
+using namespace TaskScheduler;
 
 
 template<class t>

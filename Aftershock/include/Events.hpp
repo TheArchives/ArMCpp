@@ -33,6 +33,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <list>
 
+namespace Events {
+
+/** Base Event class.
+ *  Base class for events containing basic status tribool
+ */
+
 struct Event {
     boost::logic::tribool status;
     operator bool(){
@@ -43,6 +49,7 @@ struct Event {
     }
 };
 
+/// @cond NoDocument
 template<class t>
 struct dataEvent : Event {
     std::list<t> data;
@@ -51,14 +58,21 @@ struct dataEvent : Event {
         return currentData;
     }
 };
+/// @endcond NoDocument
+
+/** Class for connection events.
+ *  This is used when after receives a new connection.
+ *  Use Event::status to determine whether to allow the connection:
+ *  true:allow, false:disallow
+ */
 
 struct onConnectionEvent : Event {
-    // Use status to determine whether to allow the connectiom
-    // true:allow, false:disallow, indeterminate:
     const boost::asio::ip::address &addr;
     const boost::asio::ip::basic_resolver_entry<boost::asio::ip::tcp> &resolved;
     onConnectionEvent(const boost::asio::ip::address &_addr,  const boost::asio::ip::basic_resolver_entry<boost::asio::ip::tcp> &_resolved):
         addr(_addr),resolved(_resolved){status=true;}
 };
+
+}
 
 #endif // EVENTS_HPP_INCLUDED

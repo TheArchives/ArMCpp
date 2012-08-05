@@ -37,6 +37,8 @@ Players * players;
 worldClass * Worlds;
 
 using namespace std;
+using namespace Plugin;
+using namespace Aftershock;
 
 class ClassicPlugin : public PluginInterface {
     public:

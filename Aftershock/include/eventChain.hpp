@@ -34,8 +34,13 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "Events.hpp"
 
+
+namespace EventChain {
 typedef boost::signals::connection eventHook;
 typedef boost::signals::scoped_connection scopedEventHook;
+
+/// @cond NoDocument
+namespace Detail {
 
 template<class function_return>
 struct Combine_Results {
@@ -59,68 +64,123 @@ struct _signalType<void, Function> {
     typedef void return_type;
 };
 
+}
+/// @endcond NoDocument
 
-
+/// Thrown to break out of the eventChain operation
 struct chainBreaker {};
 
+/// Helper function
+/// @see chainBreaker
 inline void breakEventChain(){
     throw chainBreaker();
 }
+
+
+
+
+/** EventChain base class.
+ *  Provides basic functionality for event chains
+ */
 
 template<class Function>
 class eventChainBase
 {
     public:
     typedef typename boost::function_traits<Function>::result_type function_return;
-    typedef typename _signalType<function_return, Function>::signal_type signal_type;
-    typedef typename _signalType<function_return, Function>::return_type return_type;
+    typedef typename Detail::_signalType<function_return, Function>::signal_type signal_type;
+    typedef typename Detail::_signalType<function_return, Function>::return_type return_type;
 
+    /** Add an event to the front of the chain.
+     * @param func Function to add
+     * @returns An eventHook to that function
+     */
     template<class F>
     eventHook addFront(F&& func){
         return this->hooks.connect(func,boost::signals::at_front);
     }
 
+    /** Add an event to the back of the chain.
+     * @param func Function to add
+     * @returns An eventHook to that function
+     */
     template<class F>
     eventHook addBack(F&& func){
         return this->hooks.connect(func,boost::signals::at_back);
     }
 
-    // This is a little pointless function just here for kicks
+    /** Add an event to the desired position of the chain.
+     * @param func Function to add
+     * @param ord Position in chain
+     * @returns An eventHook to that function
+     */
     template<class F>
     eventHook addAt(int ord, F&& func){
         return this->hooks.connect(ord, func);
     }
 
+    /** Remove an event from the chain.
+     *  Doesn't work on binded functions
+     * @param func Function to remove
+     */
     template<class F>
     void remove(F&& func){
         this->hooks.disconnect(func);
     }
 
-    // Binded, cannot be removed with remove(...)
-    // Make sure you specify the placeholders
+    /** Add a function to the front of the chain.
+     * Add a binded function/arguments to the chain. Ensure you specify the placeholders.
+     * Note that these event hooks cannot be removed
+     * @param func Function to add
+     * @param args Aguement order
+     * @returns An eventHook to that function
+     */
     template<class F, class...A>
     eventHook addFront(F&& func, A&&...args){
         return addFront(std::bind(func,args...));
     }
+    /** Add a function to the back of the chain.
+     * Add a binded function/arguments to the chain. Ensure you specify the placeholders.
+     * Note that these event hooks cannot be removed
+     * @param func Function to add
+     * @param args Aguement order
+     * @returns An eventHook to that function
+     */
     template<class F, class...A>
     eventHook addBack(F&& func, A&&...args){
         return addBack(std::bind(func,args...));
     }
+    /** Add an event to the desired position of the chain.
+     * Add a binded function/arguments to the chain. Ensure you specify the placeholders.
+     * Note that these event hooks cannot be removed
+     * @param ord Position in chain
+     * @param func Function to add
+     * @param args Aguement order
+     * @returns An eventHook to that function
+     */
     template<class F, class...A>
     eventHook addAt(int ord, F&& func, A&&...args){
         return addAt(ord,std::bind(func,args...));
     }
 
+    /** Get lastSuccess.
+     * @returns a boolean indicating the last call was successful
+     */
     bool complete(){
         return lastSuccess;
     }
 
 
-    // Adding/removing operators (at back)
+    /** Add an event to the back of the chain.
+     * @see addBack(F&& func)
+     */
     template<class F>
     eventHook operator+(F&& func){
         return this->hooks.connect(func,boost::signals::at_back);
     }
+    /** Remove an event from the chain.
+     * @see remove
+     */
     template<class F>
     void operator-(F&& func){
         this->hooks.disconnect(func);
@@ -131,6 +191,7 @@ class eventChainBase
     bool lastSuccess;
 };
 
+/// Event chain for functions
 template <class Function>
 struct FunctionChain : public eventChainBase<Function> {
     // Execute chain
@@ -146,7 +207,7 @@ struct FunctionChain : public eventChainBase<Function> {
         }
     }
 };
-
+/// Event chain for functions that take Events::Event as the only parameter
 template<class EventType>
 struct eventChain : public eventChainBase<void(EventType&)> {
     // Execute chain
@@ -163,5 +224,6 @@ struct eventChain : public eventChainBase<void(EventType&)> {
         return e;
     }
 };
+}
 
 #endif // EVENTHOOK_HPP_INCLUDED

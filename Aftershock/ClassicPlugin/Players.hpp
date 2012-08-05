@@ -50,7 +50,7 @@ class Players
     std::bitset<255> IDS; // Perhaps too conserving?
     uint8_t getFreeID();
     uint16_t Max, Reserved;
-    scopedEventHook onData,onStep;
+    EventChain::scopedEventHook onData,onStep;
 
 public:
     PlayerDataBase db;

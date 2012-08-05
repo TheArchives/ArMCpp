@@ -31,8 +31,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "TaskScheduler.hpp"
 
 using boost::asio::ip::tcp;
-
 using namespace std;
+using namespace Aftershock;
+using Events::onConnectionEvent;
+
 void beat();
 
 serverClass::serverClass(): io_service(), acceptor(io_service,tcp::endpoint(tcp::v4(),42042))

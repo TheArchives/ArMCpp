@@ -30,6 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "Logging.hpp"
 #include "taskScheduler.hpp"
 #include "Aftershock.hpp"
+#include "Plugin.hpp"
 #include "../version.h"
 
 #include <cxxabi.h>
@@ -40,6 +41,13 @@ using namespace std;
 #if defined AFTERSHOCK_DEBUG_BUILD && AFTERSHOCK_RELEASE_BUILD
 #   error There can only be one of either debug or release define
 #endif
+
+outputLogger * Log;
+TaskScheduler::TaskScheduler * Tasks;
+serverClass * Server;
+Plugin::PluginHandler * Plugins;
+
+namespace Aftershock {
 
 bool isDLLDebugBuild(){
     #ifdef AFTERSHOCK_DEBUG_BUILD
@@ -80,20 +88,12 @@ bad_type_name::bad_type_name(const std::string& name, const int& status)
     :AftershockRuntimeException("Unable to demangle type name (" + boost::lexical_cast<std::string>(status) + "): " + name)
 {}
 
-outputLogger * Log;
-TaskScheduler * Tasks;
-serverClass * Server;
-PluginHandler * Plugins;
-
 void assignInternalPointers(const _AftershockClassPointers& a){
     Log = *a.LogP;
     Tasks = *a.TasksP;
     Server = *a.ServerP;
-    Plugins = *a.PluginsP;
+    ::Plugins = *a.PluginsP;
 }
-
-_AftershockClassPointers AftershockClassPointers({&Log,&Tasks,&Server,&Plugins});
-
 
 string demangle(const string& name)
 {
@@ -108,13 +108,6 @@ string demangle(const string& name)
     else throw bad_type_name(name, status);
 }
 
-int rangeRand(int b, int e)
-{
-    boost::uniform_int<> dist(b, e);
-    static boost::mt19937 gen;
-    boost::variate_generator<boost::mt19937&, boost::uniform_int<> > die(gen, dist);
-    return die();
-}
 const char* versionStr()
 {
     return AutoVersion::FULLVERSION_STRING;
@@ -154,3 +147,5 @@ namespace format {
         }
     }
 }
+}
+_AftershockClassPointers AftershockClassPointers({&Log,&Tasks,&Server,&Plugins});

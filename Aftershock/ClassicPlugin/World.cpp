@@ -33,6 +33,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <zlib/zlib.h>
 
 using namespace std;
+using namespace Packets;
+namespace format = Aftershock::format;
 
 
 volatile void World::physics_thread()

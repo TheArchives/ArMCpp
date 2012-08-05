@@ -74,7 +74,7 @@ void outputLogger::setPrefix(const char* time_format)
 void outputLogger::setFile(const char* file_name, bool append, bool no_cout)
 {
     if(fout) fout.close();
-    fout.open(file_name,(append?std::ios::app:std::ios::out));
+    fout.open(file_name,(append?std::ios::app : std::ios::out));
     if(!fout) throw 1;
     Silent = no_cout;
 }

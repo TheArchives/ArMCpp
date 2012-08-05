@@ -27,7 +27,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "Packets.hpp"
 
-namespace Packet_Tuple_Helpers
+namespace Packets {
+
+namespace TupleDetail
 {
 template<>
 void CountElements::operator()<std::string>(const std::string&)
@@ -81,7 +83,7 @@ int64_t& swap<int64_t>(int64_t& value)
 
 }
 
-namespace Packet_Helpers
+namespace Detail
 {
 
 template<class t>
@@ -159,4 +161,18 @@ void recvDynamicLengthData::operator()<std::wstring>(std::wstring& a)
     recvStaticLengthString<std::wstring>(a,l,s);
 }
 
+} // Detail ns
+
+boost::asio::ip::tcp::socket& Packet_Base::operator<<(boost::asio::ip::tcp::socket& s) const
+{
+    this->send(s);
+    return s;
 }
+boost::asio::ip::tcp::socket& Packet_Base::operator>>(boost::asio::ip::tcp::socket& s)
+{
+    this->recv(s);
+    return s;
+}
+
+} // Packets ns
+

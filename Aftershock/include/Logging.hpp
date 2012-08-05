@@ -36,54 +36,71 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <boost/lexical_cast.hpp>
 #include <boost/format.hpp>
 
-
-// Thread safe logging class
-
+///<  Default time format for logging.
 #define DEFAULT_TIME_FORMAT "%H:%M:%S%F"
 
+// already define in windgi.h
 #ifdef ERROR // Some constant thats defined somewhere out of my scope
 #undef ERROR
 #endif
 
+/** Logging class.
+ *  Class used for logging to file and console output
+ */
+
 class outputLogger
 {
 public:
+    /** @defgroup outputConstants Output Constants
+     *  Constants used for prepending output.
+     */
+    static const char* INFO; ///< @addtogroup outputConstants
+    static const char* DEBUG; ///<  @addtogroup outputConstants
+    static const char* ERROR; ///<  @addtogroup outputConstants
 
-    static const char* INFO;
-    static const char* DEBUG;
-    static const char* ERROR;
 
-    bool debugging;
+    bool debugging; ///<  Enable debugging output.
 
+    void setPrefix(const char* time_format); ///<  Set logging time prefix. @see boost::posix_time::time_facet
+
+    /** Set output file.
+    *   Set the logging output file with additional options. Throws 1 on failure.
+    *   @param file_name logging output file name
+    *   @param append Whether to open log file for appending
+    *   @param no_cout Do not output to console
+    */
+    void setFile(const char* file_name, bool append = true, bool no_cout = false);
+
+    bool silent(); ///<  Whether the class is outputting to cout
+    void silent(bool newval); ///<  set whether not to output to cout
+
+    /// Log with log type
+    template<class...vt>
+    outputLogger& log(const char*, const vt&...);
+
+    /// Log info
+    template<class...vt>
+    outputLogger& info(const vt&...);
+
+    /// Log error
+    template<class...vt>
+    outputLogger& error(const vt&...);
+
+    /// Log debug (can be disabled with outputLogger::debugging)
+    template<class...vt>
+    outputLogger& debug(const vt&...);
+
+    /// Log information
+    /// @see info(const vt&...)
+    template<class...vt>
+    outputLogger& operator()(const vt&...);
+
+    /// @cond NoDocument
     outputLogger();
     outputLogger(const char* time_format );
     outputLogger(const char* time_format, const char* file_name, bool append = true, bool no_cout = false);
     ~outputLogger();
-
-    void setPrefix(const char* time_format);
-    void setFile(const char* file_name, bool append = true, bool no_cout = false);
-    bool silent();
-    void silent(bool newval);
-
-    // Log with log type
-    template<class...vt>
-    outputLogger& log(const char*, const vt&...);
-
-    // Log info
-    template<class...vt>
-    outputLogger& info(const vt&...);
-
-    // Log error
-    template<class...vt>
-    outputLogger& error(const vt&...);
-
-    // Log debug (can be disabled with outputLogger::debugging)
-    template<class...vt>
-    outputLogger& debug(const vt&...);
-
-    // Log information (same as outputLogger::info)
-    template<class...vt>
-    outputLogger& operator()(const vt&...);
+    /// @endcond NoDocument
 private:
     boost::mutex m;
     std::stringstream prefix;

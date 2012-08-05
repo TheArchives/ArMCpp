@@ -34,6 +34,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "Aftershock.hpp"
 
+/** Register Plugin Initialise Function.
+ *  When developing a function, call this macro after your plugin class to create the Instantate function to allocate your plugin class for usage with aftershock.
+ */
 #define RegisterAftershockPlugin( classname, args ... ) \
 extern "C" { \
     __declspec(dllexport) PluginInterface* InstantatePlugin(const _AftershockClassPointers& a){ \
@@ -42,53 +45,90 @@ extern "C" { \
     } \
 };
 
+namespace Plugin {
+
+/** Class Interface for plugins.
+ *  All virtual functions must be overwridden.
+ *  The constructor for the derived class acts are the initialise function for the plugin.
+ *  Throw PluginLoadFail if your plugin is unable to initialise.
+ */
 struct PluginInterface {
-    virtual ~PluginInterface() throw() = 0;
     virtual void Reload() = 0;
     virtual const char* Name() const throw() = 0;
     virtual const char* Description() const throw() = 0;
     virtual uint16_t Version() const throw() = 0;
+    virtual ~PluginInterface() throw() = 0;
 };
 
-struct PluginNotLoaded : AftershockException {
+struct PluginException : Aftershock::AftershockException {
+    const char* what() const throw() {return "PluginException";}
+};
+
+struct PluginNotLoaded : PluginException {
     const char* what() const throw() {return "Requested plugin is not loaded";}
 };
-struct PluginNoLib : AftershockException {
+struct PluginNoLib : PluginException {
     const char* what() const throw() {return "Plugin not found in filesystem";}
 };
-struct PluginLibFail : AftershockException {
+struct PluginLibFail : PluginException {
     const char* what() const throw() {return "Unable to open plugin library";}
 };
-struct PluginNoInstantate : AftershockException {
+struct PluginNoInstantate : PluginException {
     const char* what() const throw() {return "Unable to retrieve plugin instantate function";}
 };
-struct PluginLoadFail : AftershockException {
+struct PluginLoadFail : PluginException {
     const char* what() const throw() {return "Plugin was unable to successfully initialise";}
 };
 
-struct _PluginHandle {
-    void* handle;
-    const std::string name;
-    PluginInterface* pluginInterface;
-    _PluginHandle(const std::string& n);
-    ~_PluginHandle();
-};
-
+/** Plugin Handler.
+ *  Used to manage plugins.
+ *  Globally instanced as Plugins
+ */
 class PluginHandler {
+public:
+    /** Load Plugin.
+     *  Load a plugin, throws on failure.
+     *  @param name The name of the plugin file excluding the file extension in the ./plugin/ directory
+     *  @return A reference to the plugin's class
+     */
+    PluginInterface& Load(const std::string& name);
+
+    /** Unload Plugin.
+     *  Unloads the given plugin, if loaded. Throws PluginNotLoaded if the plugin can not be found.
+     *  @param name The name used to load the plugin
+     */
+    void Unload(const std::string& name);
+
+    /** Retrieve a plugin class by its name.
+     *  Throws PluginNotLoaded if the plugin can not be found.
+     *  @return A reference to the plugin's class
+     */
+    PluginInterface& Get(const std::string&);
+
+    /** Check if plugin is loaded.
+        @return A boolean indicated whether the plugin is loaded
+     */
+    bool Has(const std::string&);
+
+    PluginHandler();
+    ~PluginHandler();
 private:
+    struct _PluginHandle {
+        void* handle;
+        const std::string name;
+        PluginInterface* pluginInterface;
+        _PluginHandle(const std::string& n);
+        ~_PluginHandle();
+    };
     typedef std::shared_ptr<_PluginHandle> PluginHandle;
     std::list<PluginHandle> loadedPlugins;
     PluginHandle GetHandle(const std::string&);
-public:
-    PluginHandler();
-    ~PluginHandler();
+};
 
-    PluginInterface& Load(const std::string& name);
-    void Unload(const std::string&);
-    PluginInterface& Get(const std::string&);
-    bool Has(const std::string&);
+}
 
-} extern *Plugins;
-
-
+/** Plugins class instance.
+ *  Globally available pointer to the PluginHandler class.
+ */
+extern Plugin::PluginHandler *Plugins;
 #endif // PLUGIN_HPP_INCLUDED

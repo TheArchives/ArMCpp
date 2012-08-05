@@ -40,11 +40,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "Logging.hpp"
 
+namespace TaskScheduler {
 
-typedef std::shared_ptr<class binded_function_base> shared_func;
 typedef std::shared_ptr<class _Task>                       Task;
 
+/// @cond NoDocument
+namespace Detail {
 
+typedef std::shared_ptr<class binded_function_base> shared_func;
 struct binded_function_base
 {
     virtual void call() = 0;
@@ -72,10 +75,13 @@ shared_func make_func(_f&& f, _a&&... a)
 {
     return make_func( std::bind(f,a...) );
 }
+}
+/// @endcond NoDocument
+
 
 class _Task : public std::enable_shared_from_this<_Task>
 {
-    shared_func f;
+    Detail::shared_func f;
     boost::posix_time::ptime startTime;
     boost::posix_time::ptime callTime;
     bool Canceled,Called;
@@ -85,7 +91,7 @@ class _Task : public std::enable_shared_from_this<_Task>
     Task call();
 public:
     template<class _f,class ..._a>
-    _Task(_f&& __f, _a&&... a): f(make_func(__f,a...)),startTime(boost::posix_time::microsec_clock::local_time()),callTime(startTime),Canceled(false),Called(false)
+    _Task(_f&& __f, _a&&... a): f(Detail::make_func(__f,a...)),startTime(boost::posix_time::microsec_clock::local_time()),callTime(startTime),Canceled(false),Called(false)
     {
     }
     ~_Task();
@@ -115,6 +121,8 @@ public:
     }
 };
 
+/// @cond NoDocument
+namespace Detail {
 struct TaskComp
 {
     bool operator() (const Task& lhs, const Task& rhs) const
@@ -122,6 +130,8 @@ struct TaskComp
         return *lhs>rhs;
     }
 };
+}
+/// @endcond NoDocument
 
 template<class _f,class ..._a>
 Task make_task(_f&&f,_a&&... a)
@@ -131,7 +141,7 @@ Task make_task(_f&&f,_a&&... a)
 
 class TaskScheduler
 {
-    std::priority_queue<Task, std::vector<Task>, TaskComp> tasks;
+    std::priority_queue<Task, std::vector<Task>, Detail::TaskComp> tasks;
     std::atomic<bool> sigint_raised;
     static void handle_sigint(int);
     bool run;
@@ -158,6 +168,10 @@ public:
     void stop(const int& r);
     void clear();
 
-} extern * Tasks;
+};
+
+}
+
+extern TaskScheduler::TaskScheduler *Tasks;
 
 #endif // TASKSCHEDULER_HPP_INCLUDED

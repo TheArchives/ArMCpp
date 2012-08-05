@@ -32,6 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 using namespace std;
 using namespace boost::filesystem;
+using namespace Aftershock;
 
 #ifdef _WIN32
 #   include <windows.h>
@@ -49,9 +50,11 @@ using namespace boost::filesystem;
 #   define PLUGIN_EXTENSION ".so"
 #endif
 
+namespace Plugin {
+
 PluginInterface::~PluginInterface() throw(){}
 
-_PluginHandle::_PluginHandle(const string& n): handle(0),name(n),pluginInterface(0){
+PluginHandler::_PluginHandle::_PluginHandle(const string& n): handle(0),name(n),pluginInterface(0){
     Log->debug("Loading plugin '", name,"'");
     const string filename = "Plugins/"+name+PLUGIN_EXTENSION;
     if(!exists(filename)) throw PluginNoLib();
@@ -71,7 +74,7 @@ _PluginHandle::_PluginHandle(const string& n): handle(0),name(n),pluginInterface
     pluginInterface = (*f)(AftershockClassPointers);
     Log->info("Loaded plugin '",name,"'");
 }
-_PluginHandle::~_PluginHandle(){
+PluginHandler::_PluginHandle::~_PluginHandle(){
     if(pluginInterface) delete pluginInterface;
     if(handle) freeLib(handle);
     Log->info("Unloaded plugin '",name,"'");
@@ -108,5 +111,7 @@ bool PluginHandler::Has(const string& name){
     catch(PluginNotLoaded&){
         return false;
     }
+}
+
 }
 

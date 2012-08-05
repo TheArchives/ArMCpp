@@ -36,17 +36,33 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <exception>
 #include <array>
 
-bool isDLLDebugBuild();
-bool isDLLReleaseBuild();
+/// @cond NoDocument
 
-// Base exception class for Aftershock exceptions
+/// Structure containing pointers to the core classes
+namespace Plugin{class PluginHandler;}
+namespace TaskScheduler{class TaskScheduler;}
+struct _AftershockClassPointers
+{
+    class outputLogger **LogP;
+    class TaskScheduler::TaskScheduler **TasksP;
+    class serverClass **ServerP;
+    Plugin::PluginHandler **PluginsP;
+} extern AftershockClassPointers;
+/// @endcond NoDocument
+
+namespace Aftershock {
+
+bool isDLLDebugBuild(); ///<  @returns Whether the linked aftershock lib was compiled in debug mode
+bool isDLLReleaseBuild(); ///<  @returns Whether the linked aftershock lib was compiled in release mode
+
+/// Base exception class for Aftershock exceptions
 struct AftershockException : public std::exception
 {
     virtual ~AftershockException() throw();
     virtual const char* what() const throw();
 };
 
-// Exceptions with a variable message
+/// Exceptions with a variable message
 class AftershockRuntimeException : public AftershockException
 {
     std::string msg;
@@ -56,58 +72,41 @@ public:
     virtual const char* what() const throw();
 };
 
-// An exception containing a boost error code
+/// An exception containing a boost error code
 struct boost_exception : public AftershockRuntimeException
 {
     boost_exception(const boost::system::error_code& error);
     virtual ~boost_exception() throw();
 };
 
-// Thrown when the demangle function cant demangle a string
+/// Thrown when the demangle function cant demangle a string
 struct bad_type_name: AftershockRuntimeException
 {
     bad_type_name(const std::string& name, const int& status);
 };
 
-// Demangle a string, easily
+/// Demangle a string, easily
 std::string demangle(const std::string& name);
 
-// Get the demangled name of a type
+/// Get the demangled name of a type
 template<class t>
 std::string typeName(t&& _t)
 {
     return demangle(typeid(t).name());
 }
 
-// Structure containing pointers to the core classes
-struct _AftershockClassPointers
-{
-    class outputLogger **LogP;
-    class TaskScheduler **TasksP;
-    class serverClass **ServerP;
-    class PluginHandler **PluginsP;
-} extern AftershockClassPointers;
 
-// Call this from a plugin
-void assignInternalPointers(const _AftershockClassPointers&);
+/** Assign core class pointers.
+ *  @param r struct containing aftershocks class pointers
+ */
+void assignInternalPointers(const _AftershockClassPointers& r);
 
-// Depreciated, Suspend program for time
-inline void msSleep(uint32_t ms)
-{
-    boost::this_thread::sleep(boost::posix_time::milliseconds(ms));
-}
-
-// Depreciated, but generates a random number between b and e
-int rangeRand(int b, int e);
-
-// Get version of Aftershock lib
+/// Get version of Aftershock lib
 std::array<long,4> version();
-// Get the version date of the lib
+/// Get the version date of the lib
 std::array<const char*,3> versionDate();
-// Get the version and a string
+/// Get the version and a string
 const char* versionStr();
-
-void addTasks();
 
 namespace format {
     std::list<std::string> multiLine(std::string msg);
@@ -117,5 +116,8 @@ namespace format {
     }
 
 }
+}
+
+
 
 #endif // AFTERSHOCK_HPP_INCLUDED

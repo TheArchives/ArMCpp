@@ -34,6 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 using namespace boost::algorithm;
 using namespace std;
+namespace format = Aftershock::format;
 
 Player::Player(std::shared_ptr<boost::asio::ip::tcp::socket> _sock, const PlayerInfoRef& i, uint8_t id): sock(_sock),disconnected(false), currentWorld(0), DBInfo(i), ID(id)
 {

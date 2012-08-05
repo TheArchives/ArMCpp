@@ -27,6 +27,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "taskScheduler.hpp"
 
+namespace TaskScheduler {
+
 void _Task::sleepUntilCallTime()
 {
     boost::posix_time::ptime now = boost::posix_time::microsec_clock::local_time();
@@ -126,3 +128,4 @@ void TaskScheduler::clear()
     while(!tasks.empty()) tasks.pop();
 }
 
+}

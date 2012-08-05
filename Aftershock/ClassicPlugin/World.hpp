@@ -171,8 +171,8 @@ private:
     void updatePhysQueue();
     void checkPhysicsQueue();
     bool load(std::string name);
-    void broadcastPacket(const Packet_Base&);
-    void broadcastPacket(const Packet_Base&, const Player&);
+    void broadcastPacket(const Packets::Packet_Base&);
+    void broadcastPacket(const Packets::Packet_Base&, const Player&);
     void checkPlayer(Player&);
 
 public:
