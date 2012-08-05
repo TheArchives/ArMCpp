@@ -7,44 +7,91 @@
 \****************************************************************************************************/
 
 #include <SFML/Network.hpp>
-#include <wstring.h>
+#include <string.h>
 
-sf::Packet KeepAlive0x00(int keepaliveid)
+
+class SlotData
 {
-    sf::Packet packet;
-    packet << '\x00' << keepaliveid;
-    return packet;
+    public:
+        short length;
+        void define(std::string data)
+        {
+           static char ByteArray = new static char [data.size()];
+           ByteArray = data.c_str;
+           length=data,size();
+        }
+};
+
+
+namespace MCPROT39
+{
+    namespace ClientPackets
+    {
+
+        sf::Packet KeepAlive0x00(int keepaliveid)
+        {
+            sf::Packet packet;
+            packet << '\x00' << keepaliveid;
+            return packet;
+        }
+
+        sf::Packet Handshake0x02(char protocolversion, std::string usrname, std::string serverhost, int port)
+        {
+            sf::Packet packet;
+            packet << '\x02' << protocolversion << usrname << serverhost << port;
+            return packet;
+        }
+
+        sf::Packet ChatMessage0x03(std::string message)
+        {
+            sf::Packet packet;
+            packet << '\x03' << message;
+            return packet;
+        }
+    }
+
+    namespace ServerPackets
+    {
+        sf::Packet KeepAlive0x00(int keepaliveid)
+        {
+            sf::Packet packet;
+            packet << '\x00' << keepaliveid;
+            return packet;
+        }
+
+        sf::Packet LoginRequest0x01(int entityid, std::string leveltype, char servermode, char dimension, char difficulty, unsigned char worldheight, unsigned char maxplayers)
+        {
+            sf::Packet packet;
+            packet << '\x01' << entityid << leveltype << servermode << dimension << difficulty << worldheight << maxplayers;
+            return packet;
+        }
+
+        sf::Packet ChatMessage0x03(std::string message)
+        {
+            sf::Packet packet;
+            packet << '\x03' << message;
+            return packet;
+        }
+
+        sf::Packet TimeUpdate0x04(long _time)
+        {
+            sf::Packet packet;
+            packet << '\x04' << _time;
+            return packet;
+        }
+
+        sf::Packet EntityEquipment0x05(int entityid, short slot, SlotData item)
+        {
+            sf::Packet packet;
+            packet << '\x05' << entityid << slot << item;
+        }
+
+
+    }
 }
 
-sf::Packet LoginRequest0x01(int32_t entityid, wchar_t[] leveltype, int8_t servermode, int8_t dimension, int8_t difficulty, uint8_t worldheight, uint8_t maxplayers)
-{
-    sf::Packet packet;
-    packet << '\x01' << entityid << leveltype << servermode << dimension << difficulty << worldheight << maxplayers;
-    return packet;
-}
 
-sf::Packet Handshake0x02(int8_t protocolversion, wchar_t[] usrname, wchar_t[] serverhost, int32_t port)
-{
-    sf::Packet packet;
-    packet << '\x02' << protocolversion << usrname << serverhost << port;
-    return packet;
-}
 
-sf::Packet ChatMessage0x03(wchar_t[] message)
-{
-    sf::Packet packet;
-    packet << '\x03' << message;
-    return packet;
-}
-
-sf::Packet TimeUpdate0x04(int64_t _time)
-{
-    sf::Packet packet;
-    packet << '\x04' << _time;
-    return packet;
-}
-
-sf::Packet EntityEquipment(int32_t entityid, int16_t slot, )
 
 
 

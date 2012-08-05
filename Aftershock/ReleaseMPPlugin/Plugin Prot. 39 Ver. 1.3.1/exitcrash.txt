@@ -1,8 +1,0 @@
-#0 00000000	0x6c07d9e4 in ??() (??:??)
-#1 64B78629	destroy(this=0x9132e0) (c:/program files (x86)/codeblocks/mingw32/bin/../lib/gcc/i686-pc-mingw32/4.6.0/../../../../include/boost/asio/detail/win_iocp_operation.hpp:47)
-#2 00000000	boost::asio::detail::win_iocp_io_service::shutdown_service(this=0x9132e0) (c:/program files (x86)/codeblocks/mingw32/bin/../lib/gcc/i686-pc-mingw32/4.6.0/../../../../include/boost/asio/detail/impl/win_iocp_io_service.ipp:123)
-#3 64B72BB8	~service_registry(this=0x913ae8, __in_chrg=<value optimized out>) (c:/program files (x86)/codeblocks/mingw32/bin/../lib/gcc/i686-pc-mingw32/4.6.0/../../../../include/boost/asio/detail/impl/service_registry.ipp:42)
-#4 00000000	boost::asio::io_service::~io_service(this=0x913ae8, __in_chrg=<value optimized out>) (c:/program files (x86)/codeblocks/mingw32/bin/../lib/gcc/i686-pc-mingw32/4.6.0/../../../../include/boost/asio/impl/io_service.ipp:51)
-#5 64B48B44	serverClass::~serverClass(this=0x913ae8, __in_chrg=<value optimized out>) (C:\Users\Adam\Projects\Aftershock\Code\src\Server.cpp:57)
-#6 004920DC	memDestruct<serverClass>(argc=1, argv=0x1) (C:\Users\Adam\Projects\Aftershock\Code\Launcher.cpp:62)
-#7 00000000	Destruct(argc=1, argv=0x1) (C:\Users\Adam\Projects\Aftershock\Code\Launcher.cpp:90)

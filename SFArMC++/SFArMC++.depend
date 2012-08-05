@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1344182684 source:/home/mischa/Programming/C++/ArMCpp/SFArMC++/main.cpp
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<iostream>
+

@@ -38,8 +38,7 @@
 			<Add library="sfml-system" />
 			<Add library="sfml-window" />
 		</Linker>
-		<Unit filename="cb.bmp" />
-		<Unit filename="main.cpp" />
+		<Unit filename="packet.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
