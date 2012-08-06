@@ -63,15 +63,15 @@ typedef int NEED_TO_CHANGE;
 class SlotData
 {
     public:
-        std::string SlotDatastd::string;
+        std::string SlotDataString;
         
-        SlotData(std::string SlotDatastd::string_)
+        SlotData(std::string SlotDataString_)
         {
-            SlotDatastd::string = SlotDatastd::string_;
+            SlotDatastd::string = SlotDataString_;
         }
         SlotData(const SlotData &Source)
         {
-            SlotDatastd::string = Source.SlotDatastd::string;
+            SlotDataString = Source.SlotDataString;
         }
         
         SlotData& operator= (const SlotData &source);
@@ -79,9 +79,9 @@ class SlotData
 
 SlotData& SlotData::operator= (const SlotData &Source)
 {
-    SlotDatastd::string = Source.SlotDatastd::string;
-    static char ByteArray = new static char [Source.SlotDatastd::string.size()];
-    ByteArray = Source.SlotDatastd::string.c_str;
+    SlotDataString = Source.SlotDataString;
+    static char ByteArray = new static char [Source.SlotDataString.size()];
+    ByteArray = Source.SlotDataString.c_str;
     return *this;
 }
 */
@@ -1052,7 +1052,7 @@ uint8_t
     BLOCK_GRASS,
     BLOCK_DIRT,
     BLOCK_COBBLESTONE,
-    BLOCK_WOOD,
+    BLOCK_WOOD_PLANKS,
     BLOCK_SAPLING,
     BLOCK_ADMINIUM,
     BLOCK_WATER,
